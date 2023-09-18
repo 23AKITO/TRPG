@@ -1,0 +1,1167 @@
+<!DOCTYPE html><html lang=en><head><title>伽圉</title><meta charset=utf-8><meta name=viewport content="width=device-width"><style>@font-face{src:url("https: cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-400.woff2");font-family:gg sans;font-weight:400;font-style:normal}@font-face{src:url("https: cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-500.woff2");font-family:gg sans;font-weight:500;font-style:normal}@font-face{src:url("https: cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-600.woff2");font-family:gg sans;font-weight:600;font-style:normal}@font-face{src:url("https: cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-700.woff2");font-family:gg sans;font-weight:700;font-style:normal}@font-face{src:url("https: cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-800.woff2");font-family:gg sans;font-weight:800;font-style:normal}@font-face{src:url("https: cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-400.woff2");font-family:gg sans;font-weight:400;font-style:italic}@font-face{src:url("https: cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-500.woff2");font-family:gg sans;font-weight:500;font-style:italic}@font-face{src:url("https: cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-600.woff2");font-family:gg sans;font-weight:600;font-style:italic}@font-face{src:url("https: cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-700.woff2");font-family:gg sans;font-weight:700;font-style:italic}@font-face{src:url("https: cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-800.woff2");font-family:gg sans;font-weight:800;font-style:italic}html,body{margin:0;padding:0;background-color:#36393e;color:#dcddde;font-family:"gg sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:17px;font-weight:400;scroll-behavior:smooth}a{color:#00aff4;text-decoration:none}a:hover{text-decoration:underline}img{object-fit:contain;image-rendering:high-quality;image-rendering:-webkit-optimize-contrast}.preamble{display:grid;grid-template-columns:auto 1fr;max-width:100%;padding:1rem}.preamble__guild-icon-container{grid-column:1}.preamble__guild-icon{max-width:88px;max-height:88px}.preamble__entries-container{grid-column:2;margin-left:1rem}.preamble__entry{margin-bottom:0.15rem;color:#ffffff;font-size:1.4rem}.preamble__entry--small{font-size:1rem}.chatlog{padding:1rem 0;width:100%;border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1)}.chatlog__message-group{margin-bottom:1rem}.chatlog__message-container{background-color:transparent;transition:background-color 1s ease}.chatlog__message-container--highlighted{background-color:rgba(114,137,218,0.2)}.chatlog__message-container--pinned{background-color:rgba(249,168,37,0.05)}.chatlog__message{display:grid;grid-template-columns:auto 1fr;padding:0.15rem 0;direction:ltr;unicode-bidi:bidi-override}.chatlog__message:hover{background-color:#32353b}.chatlog__message:hover .chatlog__short-timestamp{display:block}.chatlog__message-aside{grid-column:1;width:72px;padding:0.15rem 0.15rem 0 0.15rem;text-align:center}.chatlog__reply-symbol{height:10px;margin:6px 4px 4px 36px;border-left:2px solid #4f545c;border-top:2px solid #4f545c;border-radius:8px 0 0 0}.chatlog__avatar{width:40px;height:40px;border-radius:50%}.chatlog__short-timestamp{display:none;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__message-primary{grid-column:2;min-width:0}.chatlog__reply{display:flex;margin-bottom:0.15rem;align-items:center;color:#b5b6b8;font-size:0.875rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.chatlog__reply-avatar{width:16px;height:16px;margin-right:0.25rem;border-radius:50%}.chatlog__reply-author{margin-right:0.3rem;font-weight:600}.chatlog__reply-content{overflow:hidden;text-overflow:ellipsis}.chatlog__reply-link{cursor:pointer}.chatlog__reply-link *{display:inline;pointer-events:none}.chatlog__reply-link .chatlog__markdown-quote{display:inline}.chatlog__reply-link .chatlog__markdown-pre{display:inline}.chatlog__reply-link:hover{color:#ffffff}.chatlog__reply-link:hover *:not(.chatlog__markdown-spoiler){color:inherit}.chatlog__reply-edited-timestamp{margin-left:0.25rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__system-notification-icon{width:18px;height:18px}.chatlog__system-notification-author{font-weight:500;color:#ffffff}.chatlog__system-notification-content{color:#96989d}.chatlog__system-notification-link{font-weight:500;color:#ffffff}.chatlog__system-notification-timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__system-notification-timestamp a{color:inherit}.chatlog__header{margin-bottom:0.1rem}.chatlog__author{font-weight:500;color:#ffffff}.chatlog__author-tag{position:relative;top:-0.1rem;margin-left:0.3rem;padding:0.05rem 0.3rem;border-radius:3px;background-color:#5865F2;color:#ffffff;font-size:0.625rem;font-weight:500;line-height:1.3}.chatlog__timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__timestamp a{color:inherit}.chatlog__content{padding-right:1rem;font-size:0.95rem;word-wrap:break-word}.chatlog__edited-timestamp{margin-left:0.15rem;color:#a3a6aa;font-size:0.75rem;font-weight:500}.chatlog__attachment{position:relative;width:fit-content;margin-top:0.3rem;border-radius:3px;overflow:hidden}.chatlog__attachment--hidden{cursor:pointer;box-shadow:0 0 1px 1px rgba(0,0,0,0.1)}.chatlog__attachment--hidden *{pointer-events:none}.chatlog__attachment-spoiler-caption{display:none;position:absolute;left:50%;top:50%;z-index:999;padding:0.4rem 0.8rem;border-radius:20px;transform:translate(-50%,-50%);background-color:rgba(0,0,0,0.9);color:#dcddde;font-size:0.9rem;font-weight:600;letter-spacing:0.05rem}.chatlog__attachment--hidden .chatlog__attachment-spoiler-caption{display:block}.chatlog__attachment--hidden:hover .chatlog__attachment-spoiler-caption{color:#fff}.chatlog__attachment-media{max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__attachment--hidden .chatlog__attachment-media{filter:blur(44px)}.chatlog__attachment-generic{max-width:520px;width:100%;height:40px;padding:10px;border:1px solid #292b2f;border-radius:3px;background-color:#2f3136;overflow:hidden}.chatlog__attachment--hidden .chatlog__attachment-generic{filter:blur(44px)}.chatlog__attachment-generic-icon{float:left;width:30px;height:100%;margin-right:10px}.chatlog__attachment-generic-size{color:#72767d;font-size:12px}.chatlog__attachment-generic-name{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.chatlog__embed{display:flex;margin-top:0.3rem;max-width:520px}.chatlog__embed-color-pill{flex-shrink:0;width:0.25rem;border-top-left-radius:3px;border-bottom-left-radius:3px}.chatlog__embed-color-pill--default{background-color:#202225}.chatlog__embed-content-container{display:flex;flex-direction:column;padding:0.5rem 0.6rem;border:1px solid rgba(46,48,54,0.6);border-top-right-radius:3px;border-bottom-right-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-content{display:flex;width:100%}.chatlog__embed-text{flex:1}.chatlog__embed-author-container{display:flex;margin-bottom:0.5rem;align-items:center}.chatlog__embed-author-icon{width:20px;height:20px;margin-right:0.5rem;border-radius:50%}.chatlog__embed-author{color:#ffffff;font-size:0.875rem;font-weight:600;direction:ltr;unicode-bidi:bidi-override}.chatlog__embed-author-link{color:#ffffff}.chatlog__embed-title{margin-bottom:0.5rem;color:#ffffff;font-size:0.875rem;font-weight:600}.chatlog__embed-description{color:#dcddde;font-weight:500;font-size:0.85rem}.chatlog__embed-fields{display:flex;flex-wrap:wrap;gap:0 0.5rem}.chatlog__embed-field{flex:0;min-width:100%;max-width:506px;padding-top:0.6rem;font-size:0.875rem}.chatlog__embed-field--inline{flex:1;flex-basis:auto;min-width:50px}.chatlog__embed-field-name{margin-bottom:0.2rem;color:#ffffff;font-weight:600}.chatlog__embed-field-value{color:#dcddde;font-weight:500}.chatlog__embed-thumbnail{flex:0;max-width:80px;max-height:80px;margin-left:1.2rem;border-radius:3px}.chatlog__embed-images{display:grid;margin-top:0.6rem;grid-template-columns:repeat(2,1fr);gap:0.25rem}.chatlog__embed-images--single{display:block}.chatlog__embed-image{object-fit:cover;object-position:center;max-width:500px;max-height:400px;width:100%;height:100%;border-radius:3px}.chatlog__embed-footer{margin-top:0.6rem;color:#dcddde}.chatlog__embed-footer-icon{width:20px;height:20px;margin-right:0.2rem;border-radius:50%;vertical-align:middle}.chatlog__embed-footer-text{vertical-align:middle;font-size:0.75rem;font-weight:500}.chatlog__embed-invite-container{min-width:320px;padding:0.6rem 0.7rem;border:1px solid rgba(46,48,54,0.6);border-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-invite-title{margin:0 0 0.8rem 0;color:#b9bbbe;font-size:0.75rem;font-weight:700;text-transform:uppercase}.chatlog__embed-invite{display:flex}.chatlog__embed-invite-guild-icon{width:50px;height:50px;border-radius:0.85rem}.chatlog__embed-invite-info{margin-left:1rem}.chatlog__embed-invite-guild-name{color:#ffffff;font-weight:600}.chatlog__embed-invite-guild-name a{color:inherit}.chatlog__embed-invite-channel-icon{width:18px;height:18px;vertical-align:bottom}.chatlog__embed-invite-channel-name{font-size:0.9rem;font-weight:600}.chatlog__embed-generic-image{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-video{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-gifv{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-spotify{border:0}.chatlog__embed-youtube-container{margin-top:0.6rem}.chatlog__embed-youtube{border:0;border-radius:3px}.chatlog__sticker{width:180px;height:180px}.chatlog__sticker--media{max-width:100%;max-height:100%}.chatlog__reactions{display:flex}.chatlog__reaction{display:flex;margin:0.35rem 0.1rem 0.1rem 0;padding:0.125rem 0.375rem;border:1px solid transparent;border-radius:8px;background-color:#2f3136;align-items:center}.chatlog__reaction:hover{border:1px solid hsla(0,0%,100%,.2);background-color:transparent}.chatlog__reaction-count{min-width:9px;margin-left:0.35rem;color:#b9bbbe;font-size:0.875rem}.chatlog__reaction:hover .chatlog__reaction-count{color:#dcddde}.chatlog__markdown{max-width:100%;line-height:1.3;overflow-wrap:break-word}.chatlog__markdown h1{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.5rem;line-height:1}.chatlog__markdown h2{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.25rem;line-height:1}.chatlog__markdown h3{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1rem;line-height:1}.chatlog__markdown h1:first-child,h2:first-child,h3:first-child{margin-top:0.5rem}.chatlog__markdown ul,ol{margin:0 0 0 1rem;padding:0}.chatlog__markdown-preserve{white-space:pre-wrap}.chatlog__markdown-spoiler{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__markdown-spoiler--hidden{cursor:pointer;background-color:#202225;color:rgba(0,0,0,0)}.chatlog__markdown-spoiler--hidden:hover{background-color:rgba(32,34,37,0.8)}.chatlog__markdown-spoiler--hidden::selection{color:rgba(0,0,0,0)}.chatlog__markdown-quote{display:flex;margin:0.05rem 0}.chatlog__markdown-quote-border{margin-right:0.5rem;border:2px solid #4f545c;border-radius:3px}.chatlog__markdown-pre{background-color:#2f3136;font-family:"Consolas","Courier New",Courier,monospace;font-size:0.85rem;text-decoration:inherit}.chatlog__markdown-pre--multiline{display:block;margin-top:0.25rem;padding:0.5rem;border:2px solid #282b30;border-radius:5px;color:#b9bbbe}.chatlog__markdown-pre--multiline.hljs{background-color:#2f3136;color:#b9bbbe}.chatlog__markdown-pre--inline{display:inline-block;padding:2px;border-radius:3px}.chatlog__markdown-mention{border-radius:3px;padding:0 2px;background-color:rgba(88,101,242,.3);color:#dee0fc;font-weight:500}.chatlog__markdown-mention:hover{background-color:#5865f2;color:#ffffff}.chatlog__markdown-timestamp{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__emoji{width:1.325rem;height:1.325rem;margin:0 0.06rem;vertical-align:-0.4rem}.chatlog__emoji--small{width:1rem;height:1rem}.chatlog__emoji--large{width:2.8rem;height:2.8rem}.postamble{padding:1.25rem}.postamble__entry{color:#ffffff}</style><link rel=stylesheet href=https:cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css><script src=https://media.discordapp.net/attachments/1153255405141626889/1153255430760448061/3034d57e-4839-4352-815e-95c6d502f632.png?width=676&height=676></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__markdown-pre--multiline').forEach(e=>hljs.highlightBlock(e));});</script><script src=https://media.discordapp.net/attachments/1153255405141626889/1153255430760448061/3034d57e-4839-4352-815e-95c6d502f632.png?width=676&height=676></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__sticker--media[data-source]').forEach(e=>{const anim=lottie.loadAnimation({container:e,renderer:'svg',loop:true,autoplay:true,path:e.getAttribute('data-source')});anim.addEventListener('data_failed',()=>e.innerHTML='<strong>[Sticker cannot be rendered]</strong>');});});</script><script>function scrollToMessage(event,id){const element=document.getElementById('chatlog__message-container-'+id);if(!element)
+return;event.preventDefault();element.classList.add('chatlog__message-container--highlighted');window.scrollTo({top:element.getBoundingClientRect().top-document.body.getBoundingClientRect().top-(window.innerHeight/2),behavior:'smooth'});window.setTimeout(()=>element.classList.remove('chatlog__message-container--highlighted'),2000);}
+function showSpoiler(event,element){if(!element)
+return;if(element.classList.contains('chatlog__attachment--hidden')){event.preventDefault();element.classList.remove('chatlog__attachment--hidden');}
+if(element.classList.contains('chatlog__markdown-spoiler--hidden')){event.preventDefault();element.classList.remove('chatlog__markdown-spoiler--hidden');}}</script><svg style=display:none xmlns=http: www.w3.org/2000/svg><defs><symbol id=attachment-icon viewBox="0 0 720 960"><path fill=#f4f5fb d=M50,935a25,25,0,0,1-25-25V50A25,25,0,0,1,50,25H519.6L695,201.32V910a25,25,0,0,1-25,25Z /><path fill=#7789c4 d=M509.21,50,670,211.63V910H50V50H509.21M530,0H50A50,50,0,0,0,0,50V910a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50h0V191Z /><path fill=#f4f5fb d=M530,215a25,25,0,0,1-25-25V50a25,25,0,0,1,16.23-23.41L693.41,198.77A25,25,0,0,1,670,215Z /><path fill=#7789c4 d=M530,70.71,649.29,190H530V70.71M530,0a50,50,0,0,0-50,50V190a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50Z /></symbol><symbol id=join-icon viewBox="0 0 18 18"><path fill=#3ba55c d="m0 8h14.2l-3.6-3.6 1.4-1.4 6 6-6 6-1.4-1.4 3.6-3.6h-14.2" /></symbol><symbol id=leave-icon viewBox="0 0 18 18"><path fill=#ed4245 d="m3.8 8 3.6-3.6-1.4-1.4-6 6 6 6 1.4-1.4-3.6-3.6h14.2v-2" /></symbol><symbol id=call-icon viewBox="0 0 18 18"><path fill=#3ba55c fill-rule=evenodd d="M17.7163041 15.36645368c-.0190957.02699568-1.9039523 2.6680735-2.9957762 2.63320406-3.0676659-.09785935-6.6733809-3.07188394-9.15694343-5.548738C3.08002193 9.9740657.09772497 6.3791404 0 3.3061316v-.024746C0 2.2060575 2.61386252.3152347 2.64082114.2972376c.7110335-.4971705 1.4917101-.3149497 1.80959713.1372281.19320342.2744561 2.19712724 3.2811005 2.42290565 3.6489167.09884826.1608492.14714912.3554431.14714912.5702838 0 .2744561-.07975258.5770327-.23701117.8751101-.1527655.2902036-.65262318 1.1664385-.89862055 1.594995.2673396.3768148.94804468 1.26429792 2.351016 2.66357424 1.39173858 1.39027775 2.28923588 2.07641807 2.67002628 2.34187563.4302146-.2452108 1.3086162-.74238132 1.5972981-.89423205.5447887-.28682915 1.0907006-.31944893 1.4568885-.08661115.3459689.2182151 3.3383754 2.21027167 3.6225641 2.41611376.2695862.19234426.4144887.5399137.4144887.91672846 0 .2969525-.089862.61190215-.2808189.88523346" /></symbol><symbol id=pencil-icon viewBox="0 0 18 18"><path fill=#99aab5 d="m0 14.25v3.75h3.75l11.06-11.06-3.75-3.75zm17.71-10.21c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75z" /></symbol><symbol id=pin-icon viewBox="0 0 18 18"><path fill=#b9bbbe d="m16.908 8.39684-8.29587-8.295827-1.18584 1.184157 1.18584 1.18584-4.14834 4.1475v.00167l-1.18583-1.18583-1.185 1.18583 3.55583 3.55502-4.740831 4.74 1.185001 1.185 4.74083-4.74 3.55581 3.555 1.185-1.185-1.185-1.185 4.1475-4.14836h.0009l1.185 1.185z" /></symbol><symbol id=channel-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 9H9.41045Z" /></symbol><symbol id=thread-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.43309 21C5.35842 21 5.30189 20.9325 5.31494 20.859L5.99991 17H2.14274C2.06819 17 2.01168 16.9327 2.02453 16.8593L2.33253 15.0993C2.34258 15.0419 2.39244 15 2.45074 15H6.34991L7.40991 9H3.55274C3.47819 9 3.42168 8.93274 3.43453 8.85931L3.74253 7.09931C3.75258 7.04189 3.80244 7 3.86074 7H7.75991L8.45234 3.09903C8.46251 3.04174 8.51231 3 8.57049 3H10.3267C10.4014 3 10.4579 3.06746 10.4449 3.14097L9.75991 7H15.7599L16.4523 3.09903C16.4625 3.04174 16.5123 3 16.5705 3H18.3267C18.4014 3 18.4579 3.06746 18.4449 3.14097L17.7599 7H21.6171C21.6916 7 21.7481 7.06725 21.7353 7.14069L21.4273 8.90069C21.4172 8.95811 21.3674 9 21.3091 9H17.4099L17.0495 11.04H15.05L15.4104 9H9.41035L8.35035 15H10.5599V17H7.99991L7.30749 20.901C7.29732 20.9583 7.24752 21 7.18934 21H5.43309Z" /><path fill=#b9bbbe d="M13.4399 12.96C12.9097 12.96 12.4799 13.3898 12.4799 13.92V20.2213C12.4799 20.7515 12.9097 21.1813 13.4399 21.1813H14.3999C14.5325 21.1813 14.6399 21.2887 14.6399 21.4213V23.4597C14.6399 23.6677 14.8865 23.7773 15.0408 23.6378L17.4858 21.4289C17.6622 21.2695 17.8916 21.1813 18.1294 21.1813H22.5599C23.0901 21.1813 23.5199 20.7515 23.5199 20.2213V13.92C23.5199 13.3898 23.0901 12.96 22.5599 12.96H13.4399Z" /></symbol></defs></svg><body><div class=preamble><div class=preamble__guild-icon-container><img class=preamble__guild-icon src="https://media.discordapp.net/attachments/1153255405141626889/1153255430760448061/3034d57e-4839-4352-815e-95c6d502f632.png?width=676&height=676" alt="Guild icon" loading=lazy></div><div class=preamble__entries-container>
+
+
+			<div class="preamble__newline">　</div>
+			<div class=preamble__entry>伽圉</div><div class="preamble__entry preamble__entry--small"> ♡ 作者：ヒチリ　♡ KP：入棺　♡ PL：鯨魚　♡ KPC：鈴 雪月　♡ PC：鈴 風花</div></div></div>
+<div class="chatlog">
+
+<div class=chatlog__message-group><div id=chatlog__message-container-1111262795007270963 class=chatlog__message-container data-message-id=1111262795007270963><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1111262795007270963>05/25/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>張開厚重的眼皮，妳醒了過來。
+尚處於模糊的大腦意識到了周圍的事物，柔軟的床舖，如羽毛般輕軟的綿被，以及，微弱的金屬聲音。
+
+簡單裝潢的淺色空間中，有讓人鼻腔發癢的香甜氣息，那是與妳房間的清新劑不甚相同的誘人香氣。
+
+片刻後，妳揉了揉雙眼，環顧起四周。
+妳發現自己正身處於某個陌生的房間中，而房間中央有一個陌生的巨大箱子。
+
+不——
+準確來說它是一個鐵籠。傳入耳中的金屬聲似乎就是從那傳來的。
+
+目光突然對上，被關在那裡頭的鈴 雪月輕輕地彎起了雙目，朝妳搖搖手。
+
+未等妳多作思考，半跪在籠中的他便揚起嘴角，向妳懶洋洋的微笑，道：「醒了嗎？風花，來幫我解開啊。」
+
+過於親暱的稱呼使妳一征。
+在記憶中，雪月不曾直呼妳的名字，至少在妳懂事起時不曾聽過。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1111267281209659432 class=chatlog__message-container data-message-id=1111267281209659432><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1111267281209659432>05/25/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>難道、是想明白了？
+還是說、是我再次進入的夢境呢？
+
+柔軟長髮披在肩膀，使她身上的每一處都彷彿融化在雪中一樣。
+「哥哥，你困住自己了？」
+
+小巧雙足踏在地板，伴著輕微的磨擦聲來到了籠前。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1111271563367567471 class=chatlog__message-container data-message-id=1111271563367567471><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1111271563367567471>05/25/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>除了隨身物不在以外，衣服和髮型也平時一樣，身體亦沒有受傷或特殊變化。
+如果不是現實，那麼如此親切的雪月也許只存在夢中吧。
+
+「不是呢，」見妳靠近，雪月甚至以雙膝往前了兩步，以臉頰輕蹭了蹭籠子的鐵欄杆。「大概是進對我這樣做了吧。」
+
+「一直在這裡等妳哦。」
+
+在籠前的妳能清晰看見雪月的脖頸上戴著像寵物用的項圈。
+淡藍色的項圈緊勒住他的脖子，甚至勒出了淺粉紅的痕。
+
+項圈的背面延伸出一條粗長的鎖鏈，鎖鏈幾乎占滿了雪見的腳邊。鏈子的末端被固定、焊死在鐵籠的欄杆上。
+
+雪月的手腕也被手銬鎖起，也難怪他無法自己解開脖頸後被小鎖頭緊鎖的鎖扣吧。 </span></div></div></div></div><div id=chatlog__message-container-1111271567557664868 class=chatlog__message-container data-message-id=1111271567557664868><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="05/25/2023"></div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>【靈感】 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1111272032261394463 class=chatlog__message-container data-message-id=1111272032261394463><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1111272032261394463>05/25/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>⚀ +rj 風花靈感 85 ⚅</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1111272033427394621 class=chatlog__message-container data-message-id=1111272033427394621><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/attachments/1153255405141626889/1153260600089133097/Three_six-sided_dice.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=DICE#4799 data-user-id=680792660956807301>DICE</span> <span class=chatlog__author-tag>BOT</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1111272033427394621>05/25/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>判定
+風花靈感:
+失敗(91/85) </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1111272267817685043 class=chatlog__message-container data-message-id=1111272267817685043><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1111272267817685043>05/25/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>之前的記憶非常很模糊，因此妳完全想不起來自己為什麽會在這裡，來這裡之前做了什麼。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1111274668838629396 class=chatlog__message-container data-message-id=1111274668838629396><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1111274668838629396>05/25/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>平常相處的時間十分寶貴，所以每分每刻風花都會記得很清楚。
+像現在這樣能俯視哥哥的畫面是很少見的，少見得想拍下他，少見得為何來到這裡的原因都變得不太重要了。
+
+「在等風花為你打開嗎？」
+她揚起柔軟的笑容問道。
+
+欄杆冰冷，但仍然想越過它觸摸哥哥在白色肌膚上明顯的淺粉紅。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1111280871111147541 class=chatlog__message-container data-message-id=1111280871111147541><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1111280871111147541>05/25/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>籠子的外頭也被鎖鏈胡亂地纏著，鎖鏈的兩端亦被掛鎖固定。數十根鐵柱相連的籠前有小部的缺口，那邊似乎是一扇門，大小正好能讓人進出。
+
+妳的手腕纖細，能輕鬆穿過鐵柱與鎖鏈間的縫去觸雪月微微發紅的頸項。
+
+或者說，那些無機物不可能阻礙到妳想撫摸他的心。
+
+「對啊。」雪月並不抗拒妳的撫摸，順著妳柔軟的掌，將頭往妳的手上靠，讓妳撫著、疼愛著。
+從他的表情看來，甚至，有點享受嗎？
+
+「等風花醒來的時間，都在想妳啊。」雪見直視著妳。那柔和的中音帶些沙啞，挌過耳際時癢癢的，就像他那雙勾人的眸，總能讓妳感受深刻。
+
+如此親密的觸碰對上一次在何時呢。
+妳肯定也會記得吧，就算只是普通不過的交談，或只是身在同一空間的時間，妳都會把它們存進腦海。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1111285643486703706 class=chatlog__message-container data-message-id=1111285643486703706><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1111285643486703706>05/25/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>聽到哥哥成長期帶點沙啞的聲音，就覺得自己將來也一樣，彼此的紫色交錯，就能更快更快地長大。
+那時候，我的臉頰就不會染上他的淡紅了吧。
+
+「我也總是在想哥哥啊。」
+雖然他的話語一定與我的「也」沒關係，但在夢裡的話，沒緊要的。
+
+「風花為哥哥找鎖匙吧。」
+即使留戀著兩人這點點的觸摸，但也該先把跪著的哥哥放出來。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1111290780150140938 class=chatlog__message-container data-message-id=1111290780150140938><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1111290780150140938>05/25/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「那就拜託風花了。」雪月輕輕笑著。他側過頭，在妳收回手前用唇輕吻妳的指節。
+
+那異色的目線始終黏在妳的身上，幾乎妳每次望他時，都會跟雙目對視。
+望眼欲穿的神色似是想將妳烙印在瞳仁，把妳吸引至他的世界之中。
+
+這樣一來就會互相染上對方的顏色了吧。
+
+妳環視著房間，房間不大也不小，設備雖簡略卻也足夠妳們兩人在這裡生活。
+這裡有著開放式廚房、被磨砂玻璃所間隔的浴室，還有妳所躺過的雙人床。
+而床的旁邊有張書桌。
+
+在房間的盡頭還有一扇鐵門。雖然門上沒有玻璃等能窺視外頭的透明物，但應該是能通往外頭的吧。在門上貼有張小紙條，不過由於距離略遠，妳無法看清。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1111292504826990713 class=chatlog__message-container data-message-id=1111292504826990713><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1111292504826990713>05/25/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>軟乎的觸感。
+
+「唔。」
+風花以姆指輕蹭著指節，想要把燙到的一刻留下。
+再望了下被親的指節後，便笑著輕快地走向書桌。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1111301693284565132 class=chatlog__message-container data-message-id=1111301693284565132><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/attachments/1153255405141626889/1153261852894175283/gemstones-vs-crystals-differences-1170x658_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(192,192,192) title=lemonicesoda data-user-id=679431188745551872>KP</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1111301693284565132>05/25/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>漆上白漆的木桌子有兩個抽屜，乾淨整潔的桌面中放置著一對雪白的小兔子玩偶。
+
+小兔子們的尺寸跟妳的掌心差不多大，頭頂上系有小鏈子，應該可以當成掛飾使用。玩偶的眼睛撲閃、撲閃很是得意，且它們的脖子上也系著可愛的粉、藍漸變色緞帶。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1111311892745568276 class=chatlog__message-container data-message-id=1111311892745568276><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1111311892745568276>05/25/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「挺可愛的。」
+風花拿起兩只小兔子，輕輕地把他們撞在一起，又用指頭點一點那對與兩人眼眸相似的緞帶。
+把玩了一會才把抽屜都拉開。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1111370740021870612 class=chatlog__message-container data-message-id=1111370740021870612><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/attachments/1153255405141626889/1153261852894175283/gemstones-vs-crystals-differences-1170x658_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(192,192,192) title=lemonicesoda data-user-id=679431188745551872>KP</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1111370740021870612>05/26/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>小兔子的鼻子相抵，看起來像親親一樣，很是可愛。
+也許它們看來跟你倆多少有點相似，不免忍不住想多玩一陣子。
+
+拉開第一個抽屜，能見到有一把鎖匙，或許能開鎖相對應的東西吧。
+
+然後，妳拉開剩下的第二個抽屜。裡頭放置了個讓妳感到不可思議的器具——防咬嘴套，像市面上給大型犬使用的那種。只是它的尺寸看來更大一些，這大小剛好能用在人身上。
+
+鐵口銜的皮帶部分裡頭刷上了絨，材質亦相當柔軟，而它明明是拘束器可帶子卻是如糖果般的淡藍色。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1112031611748368564 class=chatlog__message-container data-message-id=1112031611748368564><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1112031611748368564>05/27/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>風花先把鎖匙和小兔子放在口袋，再拿起嘴套。
+
+——讓哥哥戴上一定很可愛。
+她想到雪白博美戴上嘴套的樣子便不禁輕笑。
+
+「哥哥，我找到鎖匙了——」
+轉身再次以輕快的腳步回去，全然沒有來到未知地方的不安或害怕。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1112650327188045885 class=chatlog__message-container data-message-id=1112650327188045885><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1112650327188045885>05/29/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>大概是跟喜歡的哥哥身處在同一空間，妳並沒有任何的不快。對方少有的親切也使妳心情甚好，如果以後也能如此相處——在不被父母掌控，只存在你們倆人的小世界中自給自足，這該有多好呢。
+
+「風花做得真好呢。」看著妳走來的雪月仿似一頭白色的大西摩，只是臉上的笑容卻像可愛的小博美。那孤微笑中帶有絲絲的寵溺、溫暖，是平常難以一見的表情。
+
+「就麻煩風花了哦。」他乖乖的待在籠中，等著妳把籠外的鎖鏈解開。似乎他並沒有去想妳要把嘴套用到他身上，便自動無視了那個小玩意。
+
+而妳對著外頭的鐵鏈試了試手中的鎖匙，可惜的是它們並不相合。於是，雪月想了想，便被銬住的雙手盡量往前伸。由於他的骨架比較粗，即使將雙手交疊也無法伸出籠外，只好無奈的對妳笑笑：「或者風花試試看這邊的？」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1113473468999159828 class=chatlog__message-container data-message-id=1113473468999159828><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1113473468999159828>05/31/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「哥哥等等——」
+風花拿出藍色漸變緞帶的小兔子，先是掛在哥哥的項圈上，再以鎖匙打開他手上的手銬。
+
+「現在會好些嗎？」
+風花不能把視線從他的笑上移開，就好像被香氣吸引的蜜蜂一樣，只想再靠近一點。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1113473932549423126 class=chatlog__message-container data-message-id=1113473932549423126><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/attachments/1153255405141626889/1153261852894175283/gemstones-vs-crystals-differences-1170x658_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(192,192,192) title=lemonicesoda data-user-id=679431188745551872>KP</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1113473932549423126>05/31/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>【可骰也可不骰閃避】</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1113766963026612244 class=chatlog__message-container data-message-id=1113766963026612244><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1113766963026612244>06/01/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>⚀ 不骰 ⚅</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1115115756510789643 class=chatlog__message-container data-message-id=1115115756510789643><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1115115756510789643>06/05/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>雪月聽話的等著妳把小兔子掛到他的項圈上，掛好後他也好奇的摸了摸那手感優良的兔子，愛不惜手的撫著它的頭笑著對妳說：「這也是風花找到的吧，跟妳的感覺真像呢，真可愛。」
+
+只要是妳想的事他都乖乖聽從，如此乖巧的雪月假若也存在於平日之中，你們的關係也應這般親暱吧。
+
+而隨著「哢嚓」聲，雪見的手銬掉落地上。
+
+「嗯，好多了真是麻煩風花了呢，」與此同時，雙手得到解放的雪月悅愉地笑了笑，這不懷好意的笑容，讓妳有些不寒而慄。如終，那是妳所陌生的表情，雪月接著道：「只是。」
+
+「有什麼，似乎還不夠的感覺。」
+
+那想法也像成真般，雪月一把抓住了妳的前襟，反應不及的妳便直被拉了過去。前額重重地撞在籠子上，傳來的疼痛的感使令妳視野一白。
+
+雪月的雙眸深處正窺視著妳的表情，極近距離的。
+
+當妳回過神來，雪月吻上妳的嘴唇。他伸出舌，橫蠻地探進妳口中，侵吞著妳的呼吸、妳的溫度。
+
+雪月鋒利的犬齒陷落於你的軟唇裡，劃破了一道小口。
+他貪婪的舔舐、啜吻著妳唇中流出的血，然後細細的享用、吞咽，把它連同唾液全數飲下。
+
+在那之後，雪月若無其事地鬆開手，用手背敲了敲鐵籠的欄桿。
+「吶，風花快把這個也打開吧？在這裡我可沒法抱住妳哦？」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1115132457004568586 class=chatlog__message-container data-message-id=1115132457004568586><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1115132457004568586>06/05/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>如果愛與恨是一體，那疼痛和甜美能混在一起也是自然。
+
+額頭的痛楚順著火焰熊熊燃燒，燻得眼睛泛起淚光，在模糊的視線中哥哥的窺探卻如此清晰。
+
+以往的掙扎似乎某個時候混成一團，化為自己不懂的黑暗。
+已經看不清對方眸中的自己了，但少女依舊沒有移開眼眸，任由滿心的喜歡和貪欲顯露出狹小的籠中。
+
+「哥哥......」
+
+即使還未反應過來，但嗓音早已暴露出少女的委屈和撒嬌般的溫軟。
+可惜對方似乎并未欣賞，下一瞬便以兇猛的氣勢把她的吐息盡數吞沒。
+
+少年的呼吸彷彿可以麻醉神志，少女的靈魂在他的搶奪下只可浮游流浪，不由自主，滑過喉嚨在他的身體某處寄生。
+而淚水落下後，風花才感受到心臟跳動之快。
+
+「哥哥、哥哥，你先看看風花。」
+
+驟然得到想要之物，風花卻只懂平靜地流淚。
+她的臉頰、唇瓣、眼角都是粉嫩的紅，一副激動的樣子，話卻仍然是平常的柔軟。
+
+到底為什麼呢？
+明明是欣喜的，淚水卻止不住，就好像得到了偽物，又捨不得放手。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1116335695112458320 class=chatlog__message-container data-message-id=1116335695112458320><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1116335695112458320>06/08/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「嗯～我在看著風花呢。」雪月凝望著妳的流著淚的雙瞳，他似乎若有所思，卻無法理解妳現在的情緒。妳能見到他伴隨那抹柔和的笑容下，他正向妳伸出手，看來他想要通常鐵籠為妳擦去眼淚。
+
+可他的眼神深處依舊是貪婪無底，仿佛下一秒就變成將妳吃乾抹淨的怪物，像妳所想的，現在的他就是個偽物卻擁有著妳渴望過的「感情」。
+
+他一動，鐵籠就會因為鎖鏈的磨擦而發出聲響。雖然籠子不曾因為他的掙扎而鬆動，只是籠裡的主人卻用自己的方式，一點、一點的打破妳的心理防線。
+
+啪、
+
+突然，妳聽到很清脆的巴掌聲，只見雪月用力的扇了自己一下，緊接著又一下。力度之大，連雪月本人也嚇愣了，他不可置信的看著自己的手。
+
+正當手想要再度伸向妳時，這次被雪月自己一口咬住。
+
+「呼、哈……」忙著在跟自己戰鬥的雪月幾秒後輕輕喘了口氣，然後看向了妳。他的目光馬上注意到妳嘴唇的破損，他皺眉、咬在掌側的虎齒又深陷一度，聲音也因此變得含糊：「抱、歉，妳……嚇到了嗎？」
+
+雪月始終粗喘著，但他不敢放鬆開口，只能放任前髮胡亂的遮擋著眼，透過髮間的縫隙看妳。
+
+妳知道，他不是第一次看妳哭。
+每當妳哭時，他再慌亂也會想方設法哄妳。
+
+偶爾妳可能會想，為什麼不放著自己就好呢。
+他曾經這樣回答過——「因為妳是我最重要的妹妹」。充滿了稚氣、又如此簡單的一句話，卻能令妳破涕為笑。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1116344219678806066 class=chatlog__message-container data-message-id=1116344219678806066><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1116344219678806066>06/08/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>每次想哭的情緒都來得很突然，例如看到窗外黃昏時分的天空、臉頰感受的冰冷地板、摸到二樓關上的門、那同樣顏色盈滿笑意的眼眸、彼此觸碰卻不理解的心意。
+
+現在，他好像接近所想的樣子，但都是假的。
+喜悅都是假的，哥哥都是假的。
+會不會有一天，在他眼中我都變得虛假了呢。
+
+眼前想要幫自己擦去眼淚的手愈來愈近，風花的腦袋卻只充滿著各種灰暗又模糊的念頭，連鎖鏈聲響都遠去，然而——他回來了。
+
+在他咬著自己的那一刻，風花便知道、是她最喜歡最喜歡的哥哥回來了。
+那個在無端哭泣的時候總會笨手笨腳地哄自己的他，是矛盾倔強卻異常脆弱的他。
+
+「哥哥、哥哥別這樣！」
+以衣袖擦去眼淚，風花慌忙地想要拉過他的手又想退後兩步。
+「等我！我現在就去找鎖匙！」
+
+話畢便踏著步履往雙人床的枕頭下找了找。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1116351497194704966 class=chatlog__message-container data-message-id=1116351497194704966><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1116351497194704966>06/08/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>即便如此，只要門存在的話，它就會有打開的方法吧？
+那麼，是不是每天晚上的十二點在階級中落下鞋子，對方就能順著腳印找到藏在月色間的那抹身影呢。
+
+雖然，故事的主人公們心意不盡是相通的。
+可，最終能相老、相愛，那是再好不過的結局了吧。
+
+「別跑那麼快啊！」雪月見妳往後跑去還來不及喊住妳妳便率先到達床頭，他緊張得雙膝往前移了兩步，理所當然他只撞向鐵欄杆，鐵籠頓時發出又重又沉的聲響。
+
+妳翻找著床舖，在枕頭下發現了一枚淡黃色的信封，把將拆開後能發現有一把鎖匙和一張信紙。
+<code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight">＜餵養▉▉▉法＞
+1. 每▉▉▉餵養祂▉液的話，能▉時間保持清醒。
+2. ▉▉具有一定攻擊性，擔心的話請使用防咬嘴套。
+3. ▉▉很餓，小心被▉傷喲。</code>
+像研究記錄般的字條似乎寫上關於某種生物的飼養方法，可惜被塗黑的部份無法看清，而過度隨性的筆劃也使妳花了一點時間才解讀明白。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1116354316668784771 class=chatlog__message-container data-message-id=1116354316668784771><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1116354316668784771>06/08/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>看了一眼紙條後急匆匆地收起來，拿著鎖匙轉頭往鐵籠後跑。
+「哥哥、風花找到了！」
+
+撞上鐵欄的聲響令風花不自覺地加快了動作，她看著少年堅定地說：
+「哥哥別怕！」
+握著鎖匙的小手緊得骨節處都泛白，果斷地想要打開鎖。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1116361536567521444 class=chatlog__message-container data-message-id=1116361536567521444><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1116361536567521444>06/08/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>妳把紙條收到在口袋中，來到籠邊便準備解鎖外頭連接粗重鎖鏈兩端的掛鎖。
+
+「我，我不怕哦？」聽著妳的話，雪月一愣，有些不解的回答道。
+或者說，某程度上他待在這裡可以確保妳跟他是安全的。
+
+掛鎖在籠子的頂部，妳將鎖匙插入後便能輕鬆的轉動解鎖。你們同時能聽到鎖頭被解鎖的聲響，接著便是前方缺口處的鎖了，想著妳把馬上嘗試對準前方的鎖孔準備嘗試同一把鎖匙解鎖。
+
+此時，雪月從鐵柱間伸出手，然後以雙手輕輕的握住妳。「認真的，妳還好嗎？」
+
+能清晰看見他手上被牙齒咬過的地方刺出了小孔，正滲出血水，正如妳被他咬傷的嘴唇一樣。
+
+他的齒列是這樣尖的嗎？
+
+「等等我幫妳找藥吧。對不起，把妳弄成這樣。」不過雪月也想到現在防礙妳的話只會幫倒忙，便咬咬牙鬆開了手，自責的樣子跟剛開始時那副輕浮的態度相差甚遠，就像因做錯事而坐立不安的沮喪狗狗。
+
+而在雪月說話時，妳從他的唇角能窺視到那列潔白、尖銳的牙齒，也不難怪他輕易就能將妳咬傷。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1116369181772886017 class=chatlog__message-container data-message-id=1116369181772886017><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1116369181772886017>06/08/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>明明只是喘息間，剛才的親密已經如同夢一般飄離了兩人擁有的10平方米。
+風花望著哥哥，露出了往常的笑容，既乖巧又甜美，剛好的糖果色能掩去顯眼的濃重色彩。
+
+手輕撫過他帶著擔憂的臉，再摸摸他柔順的髮絲。
+「風花沒事哦，出來後我們一起找藥。」
+
+少女沒有猶豫地打開了鎖，然後拿起剛才從抽屜帶來的嘴套把玩著。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1116373338743373908 class=chatlog__message-container data-message-id=1116373338743373908><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1116373338743373908>06/08/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>看到妳的柔軟的笑容後，雪月看來也放心了些許。
+
+他應該被困在籠中一段長時間了，肢體明顯有些發僵。雪月笨拙地彎下腰、探出身走出牢籠後，第一件事做的事便是伸展四肢。
+
+而雪月的眼神不時瞄向妳手上的嘴套，想必他也清楚那玩意的用處，本能使他臉上寫滿了抗拒。不過，他再看了眼妳唇上的傷後，便自發的來到妳面前蹲下、轉過身。
+
+「……先幫我戴上吧。」說著，雪月的耳廓泛起淺淺的粉紅。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1116376141377314877 class=chatlog__message-container data-message-id=1116376141377314877><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1116376141377314877>06/08/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>鈴風花有個習慣，就是每天找尋新的知識或想法。
+今天她同樣找到了一個——自己似乎只會找到同類「可愛」的感覺。
+
+少女盯著少年耳廓上的粉紅色，悄悄地趴上他的背，雙手越過肩膀輕掩著他的嘴巴，如同嘴套一樣。
+
+湊近的軟軟嗓音在他的耳畔傳來：
+「風花也不怕。」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1116384293594345526 class=chatlog__message-container data-message-id=1116384293594345526><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1116384293594345526>06/08/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>耳際傳來的嗓音讓雪月扭過頭，便迎上妳清澈、明亮的雙瞳。妳見他輕輕挑起眉，語氣無奈卻又是順著妳的笑道：「這不是怕不怕的問題啊。」
+
+雪月呼出的鼻息也落到妳的掌手中，暖暖的、癢癢的，像搔癢一樣。
+
+「對了。」不過，他似乎是想到了什麼，便接過妳的雙手，將它們拉開、分別移放到自己的兩肩上，他牢牢握好妳的雙臂後才站起身。
+
+「應該是在妳還很小、很小的時候，也有這樣背過妳。當然，是趁他們沒有注意到的時候。」妳趴雪月的背上，視界在他起身的一瞬變高了。
+
+即使他以前曾經背過妳玩，但那時候雪月的身體遠不及現在來得高，而且當時的他因為怕會摔著妳可提心吊擔了。而現在，正值成長期的他開始清楚自己能力到哪，於是邁出的步伐也不再膽怯。
+
+「幸好妳當時沒有嚇哭呢。那時候的妳真的很小，大概還不到腰那麼高吧。」跟據雪月的憶述，應該是在妳四到五歲時的事。雖然你們在那個年紀時，除了生日派對外應該就沒有太多機會見面，因此偶爾見上一次面時，甚少一見的兄妹間免不了不知所措。
+
+可讓人意外的是，小時候的你們不怎麼會因為沒有話題而尷尬，反而像是有著相同目標般，格外珍惜那稀少的時間。不似現在，雪月心情不好時就能找出成千上萬的理由去躲妳。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1116389914150453298 class=chatlog__message-container data-message-id=1116389914150453298><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1116389914150453298>06/08/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>風花趴在他的肩上，雙腿想要夾著對方以固定身體，但為了不打斷哥哥的回想還是沒有亂動。
+
+他所說的自己當然也記得，當時哥哥瘦小的背影輕微搖晃著，但沒有隨便放下自己，而是一直背著，直到我看他累了才乖乖地滑下來。
+
+「因為小時候哥哥的背也是這麼溫暖，像被子一樣。」少女圈緊手臂，笑著回應。
+其實那時小女孩還未玩夠，想趴很久很久的時間，想在微小的光陰中找出永遠來，如同公主和王子的結局，但在故事書中出現的大概都是很難實現。
+
+「那時玩躲貓貓，每次躲在哥哥那件能把風花整個包著的外套時都會立即被找到。」
+「就像小汪汪一樣。」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1116398648947920976 class=chatlog__message-container data-message-id=1116398648947920976><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1116398648947920976>06/09/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「妳還記得啊。」似是驚訝的語氣絲毫不帶訝異，像有預料妳會記得般。
+
+「也對，妳的記性本來就很好。」雪月心情很好的笑了笑。若不是他正背著妳，應該會想直接伸手揉揉妳的小腦袋。
+
+或者，因為想被找到妳才會在那裡等我吧。
+「對啊，幸好總會找到妳呢。」謎底心照不宣，他始終配合著妳。
+
+偶爾，在找到妳之後，他會領妳到冰箱旁，從裡頭拿出對裝的冰棒將它一分為二與妳一起分享。你們就會雙雙來到陽台那邊，坐在木製椅上看著夕陽，享受日落以前的時分。
+
+雪月最後再繞一個圈後便放妳下來，也許妳還沒玩夠，不過不作一聲的聲的手，那溫暖的大手始終牽著妳。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1116928232810369114 class=chatlog__message-container data-message-id=1116928232810369114><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1116928232810369114>06/10/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>風花同樣牽著哥哥，只是恰如「兄妹」的牽手難以填補某些不能言表的角落。
+對分的冰棒甜蜜無比卻終究不夠清涼。
+
+「只有哥哥能找到我嘛。」只有哥哥是不同的。
+少女半依著少年撒嬌，然後又道：
+「我們去浴室找藥盒吧、哥哥的手一定很痛了。」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1118795507322605568 class=chatlog__message-container data-message-id=1118795507322605568><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1118795507322605568>06/15/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>得到一點，便會想要更多，也許這是人之常情吧。
+
+兄妹情怡固然是需要的，但在長年累月的寂寞下，更多的，是對「愛」的渴求。
+
+「放妳在那邊等我的話我就失責了吧。」雪月淺笑，他伸手，順著妳柔順的髮絲輕輕撫摸妳的腦袋。
+
+聞言，他亦點點頭，眼間閃過一絲心痛，便緊牽妳到浴室處。「嗯，我是沒什麼。妳的看來更痛啊……」
+
+出於體型差異，雪月平常的一步就快是妳的 1.5 倍，而跟妳走在一起時那步履總是特別的慢。
+
+到達乾濕分離的浴室後，並沒有看到明顯的藥盒。
+
+不過這裡有洗手槽、方型的鏡櫃、廁所。隔著一扇門後還有浴缸，架子上也鋪有摺好的白毛巾。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1121352039272824922 class=chatlog__message-container data-message-id=1121352039272824922><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1121352039272824922>06/22/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「我們要在這裡生活幾天嗎？」
+風花左右四顧，發現沒有藥盒後自然地問出這句話。
+
+對她來說，只要能跟哥哥在一起那裡都一樣，只是她想哥哥應該不太樂意。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1121407453804900412 class=chatlog__message-container data-message-id=1121407453804900412><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1121407453804900412>06/22/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「說什麼呢，」雪月雖然像妳所說的，不太樂意地挑起眉，不過他亦開始翻找著鏡櫃。「妳那麼喜歡這個陌生的地方嗎？」
+
+「外頭有很擔心妳的人啊，朋友也在等妳吧。」他總是這樣，說著無心卻有意的話。
+
+而鏡櫃裡幾乎是空的，只放了零丁一支護唇膏。妳非常肯定雪月剛剛用眼神飆了好幾句髒話，但他扭頭看向妳時的目光始終是柔和的。
+
+最後，雪月還是把鏡櫃裡的護唇膏拿了出來，仔細打量著上頭的成份表。然後他抽了幾張衛生紙再用水將前端沾濕，蹲到妳的面前。
+
+「先幫妳擦一下旁邊的痕跡吧，弄痛妳的話記得跟我說哦？我會停下來。」他說著，示意妳張張嘴：「啊——」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1121413945727664188 class=chatlog__message-container data-message-id=1121413945727664188><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1121413945727664188>06/22/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>哥哥絕對是機敏的，只是有時候他會沒察覺到自己的遲鈍和⋯⋯。
+
+「也沒那麼喜歡呢。」
+風花微笑著如此說，心中習慣性地輕嘆氣，如同往常遇到生氣的哥哥一樣，哄著他也是樂趣吧。
+
+無視掉他對於自己人際關係的看法，少女沒有錯過被哄或者照顧的機會，往哥哥再先近兩步，幾乎胸膛貼著胸口才停下，抬起頭微張開嘴。
+
+「啊——」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1121420592860631190 class=chatlog__message-container data-message-id=1121420592860631190><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1121420592860631190>06/22/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>在妳貼近的時候，雪月無奈的笑了笑，然後以另一手輕輕揉搓妳柔軟的白髮。隨即，大手順著妳頭顱的線條下移，小心翼翼的捧著妳的臉頰。
+
+嘴唇是細嫩又敏感的部位，即使雪月盡可能放輕手腳的為妳拭去殘留在表面的淺淺血跡，可紙張印在唇上傷口還是傳來了刺刺的痛。
+
+所幸它看來不深，康復後應該不會留下痕跡。
+
+你倆的距離近得能映出相方的身影、臉龐、那雙好看的瞳。
+相互無言之間，連對方的呼吸聲也是如此的清晰可聽。
+
+窺看妳時被抓到的他，眼神也不躲閃，僅是回以妳一份帶著歉意和心痛的眼神。也許這個時候的他真的頗像大型犬的，做錯事時總希望得到妳原諒，卻又不知如何表達這份情緒的部份。
+
+雖然這都建立在你們兩人相處時才會發生的景象，不過，有些事正因為稀少會更明瞭其重量吧。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1121424753618583554 class=chatlog__message-container data-message-id=1121424753618583554><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1121424753618583554>06/22/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>眉尾都快垂下、如同大型犬般的眼神使風花想到：
+長大後養一只狗狗吧，聽說它的眼中只會有一個人。
+
+想法很快被唇上細微的痛楚拋於腦後，紫色的眼瞳重新映出同樣的色彩。
+此時水晶般的眸只充滿著午後溫柔的光，無聲地對著少年說：「不要緊，沒關係的。」
+
+這是只有鈴風花能給予的、屬於少女的包容。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1121432291705618492 class=chatlog__message-container data-message-id=1121432291705618492><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1121432291705618492>06/22/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>然後搬到只有一層、一個房間的公寓吧——
+兒時的許諾、夢想，雖隨著年齡不再被提起，可不論是妳還是他，都曾存在過如此的夢。
+
+夢會交織出怎樣的道路、如何的未來、哪樣的結局並無人得知，只是，那片相同的紫藤色注定著你們的一生不會輕易和簡單。
+
+專屬一詞總是吸引且難以自拔的，對雪月來說也是同樣。
+
+「……嗯。」偶爾打架後會帶著傷回來家的雪月對妳的安慰了然於心，他享受妳恰到好處的溫柔，同樣的也會把自己的交付於妳——
+
+待上下唇的血跡都被紙印去後，他打開了護唇膏的蓋子，從下唇開始幫妳塗上。
+
+薄薄塗好後，他蓋上了蓋子。他拍拍雙膝，看來準備要起身的樣子，卻在中途在妳的額上落下輕吻。
+
+「痛痛飛走。」瞬間，淺紫的片目融入了如天空般的藍，然後隨著雪月的笑容藏到了眼底。
+
+那是，只在鈴風花面前才會展現的，只屬於少年的幼稚。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1121438240495370330 class=chatlog__message-container data-message-id=1121438240495370330><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1121438240495370330>06/22/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>為著哥哥少見的一面、那份應該只有自己能見到的溫柔體貼。
+當柔軟的觸感落到額上時，少女沒法忍住唇間溢出如鈴般的笑聲。
+
+她笑得半瞇著眸，同樣露出符合年齡的舉動——她抱住哥哥的腰，張揚撒嬌的嗓音十分甜膩。
+
+「哥哥親親就不痛了，風花也給哥哥親親～」
+在少年還未反應到，少女抓起他的手用力地MUA一下，把剛塗好的唇膏地印在他的手背上。
+
+「嘿嘿、我們繼續找藥盒吧。」
+風花指指廚房的方向，等著哥哥牽她走。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1121444963364917248 class=chatlog__message-container data-message-id=1121444963364917248><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1121444963364917248>06/22/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「真的呢，完全不痛了。」雪月低頭，看著被妳親過的手背，再將視線轉向妳純粹的笑臉，他的臉頰也浮現了淡淡的粉色。
+
+雪月寵溺地牽起妳小小的手，邊走邊輕輕晃動著，跟妳一起來到廚房。
+
+雖說它看來就不像會有藥盒的樣子，不過有著簡易的配備。
+
+水池和爐竈小而整潔的排放著，廚具也一應俱全，普通的料理基本都能做。
+
+從玻璃櫥櫃裡能見到餐具是兩人份的，這裡也有約一米七高的的冰箱，以容量看來在這邊吃喝一星期應該也不成問題。
+
+「妳會有什麼想吃的嗎？」雪月率先帶著妳來到冰箱前，然後拉開冰箱門。門被拉開時馬上跑出了冰涼的冷氣，他快速的檢查著裡頭的食材並把相牽的手移至背後，讓妳站到他身後方。
+
+「雖然最近沒怎麼看料理書，但比較簡單的料理應該還記得。」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1121452633652203540 class=chatlog__message-container data-message-id=1121452633652203540><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1121452633652203540>06/22/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「我想吃唔、但哥哥的手現在不能碰水啊......」
+風花環顧四周，發現沒有藥盒後匆匆忙忙地跑回浴室拿白毛巾，垂首牽起他的手為他包紮。
+
+「風花不太餓，哥哥還是做自己喜歡又方便吃的東西好了。」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1121463216040575026 class=chatlog__message-container data-message-id=1121463216040575026><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1121463216040575026>06/22/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>雪月沒來得及拉住妳，妳便小步跑到浴室拿著軟毛巾又折回來了。妳小心的將毛巾覆在他的手背上圍了兩圈，最後綁上了小巧的兔耳朵。
+
+「這樣啊，知道了。」這隻手不碰水的話就好了吧。
+
+雪月見妳欲言又止的模樣，思索片刻後雙手搭著妳的肩帶妳到餐桌旁。隨即，他拉出了一張椅子，接著道：「妳先坐著等我吧，感覺也有一段時間沒給妳做過飯了，菜單就我來訂吧。」
+
+「正好我也想自己研究新菜單。」他以包紮著的那一手拍拍妳的肩便回到冰箱前拿取食材。
+
+將材料都放到流理台上後他順道從櫥櫃拿了枝乾淨的甜點匙和瓷碟沖了沖水，然後再度來到冰箱前，取出了什麼向妳走來。
+
+「畢竟應該要些時間，先吃這個吧。」雪月先把白瓷碟和甜點匙放到妳面前，然後撕開方才拿到的獨立裝焦糖布丁，反蓋在碟子上稍加擠壓將布丁倒出。
+
+在布丁脫膜的一瞬，焦糖液也從上至下的淋在淺黃色的布丁上，散發出淡淡的焦糖、雞蛋和奶油的香氣。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1121468572263272528 class=chatlog__message-container data-message-id=1121468572263272528><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1121468572263272528>06/22/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「哥哥也啊——」
+看到晶瑩漂亮的布丁，風花沒客氣地挖了一大匙，然後放到哥哥的唇邊。
+
+只要有看上去好吃的，風花都喜歡分給哥哥，特別是甜的東西。
+自己反而更喜愛吃點奇怪味道的東西，雖然沒有很多機會吃到。
+
+「只要哥哥做的我都想吃。」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1123960846138216468 class=chatlog__message-container data-message-id=1123960846138216468><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1123960846138216468>06/29/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「啊——唔、」雪月張開嘴，吃下了妳遞給他的布丁。
+
+雖說是便利店就能買到的布丁，不過看來味道不俗的樣子，他還是滋味的舔了舔唇。
+
+偶爾雪月會帶些手工甜點回家，但妳不難發現那些小甜點最後都會出現在垃圾桶。不過只是要妳給他的，他都會津津有味的在妳面前吃掉。
+
+食物還是分享著吃更好吃——他總是如此說的。
+
+「說些妳想吃的也可以啊。」雪月摸了摸妳的頭，然後走向冰箱拿取食材。「嘛，那我嘗試猜猜妳想吃什麼吧。」
+
+不一陣子流理台便被林林種種的食材佔滿。他也開始專注於處理食材，然後放進鍋中煮食。</span></div></div></div></div><div id=chatlog__message-container-1123960874210697387 class=chatlog__message-container data-message-id=1123960874210697387><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="06/29/2023"></div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>⚀　+rj dex 65　⚅</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1123960875640946738 class=chatlog__message-container data-message-id=1123960875640946738><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/attachments/1153255405141626889/1153260600089133097/Three_six-sided_dice.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=DICE#4799 data-user-id=680792660956807301>DICE</span> <span class=chatlog__author-tag>BOT</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1123960875640946738>06/29/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>判定
+dex:
+失敗(75/65)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1123960954749722714 class=chatlog__message-container data-message-id=1123960954749722714><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1123960954749722714>06/29/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>⚀ +r 1d100 ⚅</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1123960956150616165 class=chatlog__message-container data-message-id=1123960956150616165><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/attachments/1153255405141626889/1153260600089133097/Three_six-sided_dice.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=DICE#4799 data-user-id=680792660956807301>DICE</span> <span class=chatlog__author-tag>BOT</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1123960956150616165>06/29/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><span class="chatlog__markdown-mention" title="lemonicesoda">@鈴 雪月</span>投擲:
+1d100: 80</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1123963126669381712 class=chatlog__message-container data-message-id=1123963126669381712><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1123963126669381712>06/29/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>不久後，平底鍋上發出了噼啪、噼啪，有什麼食物在被煎煮的聲響。然後，妳能聞到從廚房那頭飄來了煙肉的香氣。
+
+另一個大鍋似乎也煮著西湯，因為妳聞到了清爽酸甜的蕃茄香，應該是羅宋湯或是雜菜湯吧。
+
+而雪月瞥了眼放在一頭的計時器，轉過頭來向坐在餐桌等待的妳說道：「再十分鐘左右就好了～」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1123965191701409903 class=chatlog__message-container data-message-id=1123965191701409903><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1123965191701409903>06/29/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>在家的時候，哥哥也總是喜歡叫我坐下休息，然後自己去忙東忙西。
+但自己從來都不太聽他的話，只想像小尾巴般跟著他。
+
+風花三扒兩撥就吃完布丁，跑到哥哥的身後伸手抱住他，把臉埋到他的背中。
+「哥哥總是猜到風花想吃的東西。」但想不透我想要的東西。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1123971360763433071 class=chatlog__message-container data-message-id=1123971360763433071><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1123971360763433071>06/29/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>即使雪月會再三叮囑妳廚房危險妳也會跟在他身邊吧，因此，他也早習慣了——
+
+習慣妳會跟在他身後，習慣妳會躲在他能找到的地方，習慣妳會一直都在。說不定他也喜歡帶妳到他的空間、世界之中，領著妳在那片無際的星球中到處走，留下雙雙的足印。
+
+只是，那個空間最近卻被他自己鎖上了。
+不過，現在的光景又讓妳找到了他藏在迷霧中的小鎖匙。
+
+「我是妳哥哥啊～總得要清楚妳的口味吧。」他拿起湯勺，輕輕攪伴著鍋裡沸騰的湯，淺淺的嘗了口。
+
+似乎對於調味很滿意的樣子，他便再勺了一小匙，側過頭跟抱著自己的妳說：「酸度剛剛好哦，妳要先嘗一口嗎？」</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1123974646941892650 class=chatlog__message-container data-message-id=1123974646941892650><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1123974646941892650>06/29/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「啊唔。」
+風花沒有豫猶地含住匙子，喝了一口。
+酸中偏甜的番茄味道，哥哥習慣為自己調點甜口的味道，對於小孩子來說是很不錯的。
+
+「哥哥做的口味從來都是好吃的，喜歡。」
+說著便像小動物一般再次埋頭到背中蹭蹭他。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1123991051611422770 class=chatlog__message-container data-message-id=1123991051611422770><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1123991051611422770>06/29/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「妳喜歡就是最好的。」
+
+洋蔥、馬鈴薯、紅蘿蔔煮熟後那自然又溫暖的甜味很是鮮美，不過妳應該更喜歡被蕃茄所中和後的微酸滋味，以及，加上黑胡椒的調味後所帶有的微辛口感。
+
+雪月取出了餐具，接著將冒著熱氣的卡邦尼意大利麵裝碟，然後盛了兩碗雜菜湯。
+
+比起吃飯，妳或許更享受現在這個帶有甜蜜氣息的氛圍。雪月看來是知道這點的，因此他手的動作都不緩不急的。
+
+「我們趁著熱吃，妳幫我拿一下這碟吧。」他把其中一碟遞向妳，然後拿起湯碗。
+
+而妳手上的卡邦尼意大利麵賣相非常不錯，拌著奶油和起司的金黃直面上還有一顆白嫩的水煮蛋。
+
+只是，旁邊那些小片小片、橘色的，看來是用胡蘿蔔切成的奇怪形狀的長耳朵生物，應該是兔子？ </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1123994264196620418 class=chatlog__message-container data-message-id=1123994264196620418><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1123994264196620418>06/29/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「耶。」
+能享受了片刻的親近和哥哥寫的飯，很好很好。
+風花的笑容帶點久違的興奮，剛才得到很多驚喜，令小女孩更期待之後時間的相處。
+
+她捧著意大利麵，快步放到桌子上，餐具還故意按照西方禮儀放好。
+餐具好、碟子好、紙巾好、胡蘿蔔好？
+
+望到小兔子樣子的胡蘿蔔，目光不由自主放到哥哥喉前的小兔子掛飾。
+
+他記得嗎？
+這樣想著手磨蹭了下口袋中的小兔子。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1124000641065435146 class=chatlog__message-container data-message-id=1124000641065435146><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/attachments/1153255405141626889/1153261852894175283/gemstones-vs-crystals-differences-1170x658_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(192,192,192) title=lemonicesoda data-user-id=679431188745551872>KP</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1124000641065435146>06/29/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>妳心情輕快的整理起餐桌，餐桌很快就被妳呈現出高級四餐廳般的模樣。
+
+這些歪七扭八的形狀任誰看都不會像兔子，不過妳卻非常熟悉。
+畢竟妳絕非第一次在食物中看到它們了。
+
+放下湯後準備把另一碟意大利麵也拿過來的雪月正好迎上妳的目光，他歪歪頭，對妳輕輕一笑。隨著他的動作，掛於他喉前的小兔子也一晃一晃的，雖然他看來並未為意到那蹦蹦跳跳的小傢伙。
+
+而妳手裡，毛茸又柔軟的觸感很像妳在撫摸頭髮的感覺。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1126471868690468935 class=chatlog__message-container data-message-id=1126471868690468935><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1126471868690468935>07/06/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>風花眨了下眼睛，收回口袋中的手坐到桌邊等著哥哥的到來。
+「我們快點吃，一會兒再到處看看。」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1126482635854708756 class=chatlog__message-container data-message-id=1126482635854708756><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1126482635854708756>07/06/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「嗯，好啊。」把食物放好後，雪月也來到桌邊跟妳一起入座。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1126495548640338061 class=chatlog__message-container data-message-id=1126495548640338061><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1126495548640338061>07/06/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「那、」
+「我開動了。」
+微微垂首合十雙手後，不緩不急地開始品嚐著哥哥煮的、自己突然想吃的意大利麵。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1126500253479211198 class=chatlog__message-container data-message-id=1126500253479211198><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1126500253479211198>07/06/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「我開動了。」雪月與妳同時合起雙手，然後捧起湯碗品嚐起自己的手藝。
+
+妳握起叉子，捲起均勻地沾染蛋液和醬汁的意大利麵條，將它緩緩送入口中。麵條軟硬適中，煙肉的邊緣也被煎得香脆，混合起司和肉香的奶油醬汁入口即化，整體加起來是超出想像的美味。以素人廚師看來，他手藝的話算得上是前段班了吧。
+
+在你們用餐時，門的方向傳來了咔噠聲，看來它被打開了。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1126502162642522202 class=chatlog__message-container data-message-id=1126502162642522202><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1126502162642522202>07/06/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>把捲起一團的麵放進口中，鹹香加上奶油的厚實感好吃得令風花自然地瞇起了眼睛，小舌頭都舔走唇邊的汁醬。
+「真的很好吃、哥哥有想過做廚師嗎？我、」
+
+正當再說什麼時，聽到門邊的響聲頭立即轉了過去，似猛獸一樣盯緊了門後可能將會到來的什麼。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1126507252367491082 class=chatlog__message-container data-message-id=1126507252367491082><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1126507252367491082>07/06/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>而聽到聲音的妳馬上緊盯向門的方面。門邊沒有再傳來其他聲音，也沒有人要打開它要走入的跡象，應該就只有鎖被解開而已。
+會不會在開始時門被鎖著的，而現在完成了什麼條件於是被開鎖了？
+
+「怎麼了嗎？」雪月歪歪頭，順著妳視線的方向看去。盯梢小半會見沒有其他動靜，他也就收回眼神，然後放下碗，用另一手摸摸妳的頭安撫妳。「我們距離門有一定的距離，有什麼人來都能看到再反應，不用太擔心。」
+
+「沒有，下廚是興趣罷了。」興趣變成職業就很難再保持熱情。
+嘛，或許用餐對象是誰才是最重要的。
+
+雪月見妳連醬汁也不放過的模樣，輕輕的笑了出聲，也握起叉子捲麵。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1126508993578278942 class=chatlog__message-container data-message-id=1126508993578278942><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1126508993578278942>07/06/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「唔唔。」一邊咀嚼著麵條，一邊連吞下的時間都不想浪費地應下哥哥。
+「那哥哥會有什麼想做嗎？偶像之類？」
+
+想法是自己提出，但下秒風花便否定了這項——畢竟她可不希望引來大多假的種族接近哥哥。
+嗯——哥哥適合文靜點的工作，作家吧，詩人也很適合。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1126514795491901461 class=chatlog__message-container data-message-id=1126514795491901461><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1126514795491901461>07/06/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「偶像啊……」感覺很累、很麻煩的樣子。
+雪月不作多想，馬上搖搖頭，又往口中送入意大利麵。
+
+未來對他而言是模糊的，於是他在生活中會過度想像假設性的問題。
+
+他細細把面嚼完吞下後，也回應道：「我應該不太適合呢。不過，妳如果想當偶像的話，我會努力成為妳的經紀人。」幕後的工作自己也比較擅長。
+
+不過除了「適合、擅長」一詞以外，私心佔比更多。
+在雪月看來，妹妹風花是耀眼的，而這份耀眼不應該被埋沒。
+
+輔助妹妹的職位說不定由經驗者來做會更妥當，但他不曾想放棄「哥哥」這個位置，也只有他能勝任。
+
+雪月拿起紙張擦去唇角的醬汁，看著妳眨了眨眼，便好奇的問：「妳呢？雖然這個話題有點早，但有什麼想做的工作嗎？」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1126519747421421579 class=chatlog__message-container data-message-id=1126519747421421579><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1126519747421421579>07/06/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「風花的話呢、嗯......」
+意大利麵被女孩捲得愈來愈大團，還未被拿起便鬆開，然後又被女孩捲起來。
+思緒就像眼前的麵一樣建立起來又否決。
+
+偶像不行，不同種族是不能互相理解的，更何況風花不想應付其他人。
+寫東西也不行，有點沉悶又無趣。
+社畜絕對不要。
+
+只想做哥哥的妹妹，應該說是哥哥最近的存在。
+
+「風花的話，想做藝術家之類的？感覺比較有趣，也能跟哥哥一起做什麼。」
+風花把麵塞進口中，臉頰都脹起來。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1129017250570047568 class=chatlog__message-container data-message-id=1129017250570047568><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1129017250570047568>07/13/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>臉頰鼓鼓的妳看來像隻小倉鼠，雪月伸手幫妳擦了擦嘴邊溢出的醬汁。「慢慢吃，不用太急。」坐回坐位的他，被妳可愛的模樣逗得發出小聲的輕笑。
+
+「藝術家嗎，」拿著叉子的手托起頭，把口裡的意大利麵好好吞嚥後也接著表示同意：「很適合妳呢，比起偶像更。」
+
+雖然他並不知道妳的煩惱，不過在某個程度上，你們想的事情說不定是相通的。
+
+不需要過多的規劃，順著靈感的指引、心的所向走。
+以獨特的靈魂吸引有著近似色彩的人。
+帶有神秘氣息的你們，也許就是天生的藝術家。
+
+「我還沒想到現在要做什麼呢。至少現在沒有……」思考到自己的未來，他陷入了片刻的沉默，而他抬眼看了看妳後，便回復到一貫的輕柔。「不過跟妳一起的話會是開心的。」
+
+對啊，未來的話不會是自己一人。
+
+不過未來有點太遠了，還是珍惜眼下比較重要吧。
+「一起的話，出去後要去畫沙畫嗎？」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1129019310661189672 class=chatlog__message-container data-message-id=1129019310661189672><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1129019310661189672>07/13/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「嗯！然後再去做手工藝吧。」
+哥哥的話如同夏天的涼風，把心中某處的緊張吹滅，留下使人舒適的安全感。
+
+風花左繞右繞的叉子平靜下來，再次變得乖巧聽話。
+「那一會我們就出這道門看看？」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1129022892902993950 class=chatlog__message-container data-message-id=1129022892902993950><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1129022892902993950>07/13/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「嗯好啊，我們就先把飯吃完吧。剩下的東西我想是不用洗了。」反正這又不是家裡。
+與在家裡不同，雖然沒有留在這裡的打算，雪月還是細嚼慢嚥的。
+
+反正真的發生什麼兒童失蹤事件，你們倆都還是好好的，急的也只有雙親而已吧？
+說不定還有身邊的朋友？不過都不及眼前的人重要。
+
+「最近在學校還好嗎？有發生什麼有趣的事嗎？」閒下心來，雪月也跟著好奇起妳的生活日常。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1129030343601696878 class=chatlog__message-container data-message-id=1129030343601696878><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1129030343601696878>07/13/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「嗯......學校沒什麼特別的感覺。」
+沒很多的意麵兩三口就吃完，風花抹乾淨唇邊後回想道。
+
+「女孩子都差不多，什麼都會聊，像小鳥一般。」一般普通，一般無趣。
+「最近她們好像都很想有男朋友的樣子，可能是看到隔壁學校的男生吧。」
+早熟但仍然幼嫩，不懂得惡意已是最好。
+
+「這樣的事對哥哥來說有趣嗎？」
+風花無聲地喝起湯來，半垂的皓眸掩蓋著緊張。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1129036919385378926 class=chatlog__message-container data-message-id=1129036919385378926><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1129036919385378926>07/13/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>好無聊。
+雪月沒出聲，又吃了口麵，不過那無奈又好笑的表情是如此寫明的。
+
+「這樣啊，還以為妳的學校會有比較特別的東西呢。」
+「像聊天話題之類，說不定會跟普通的學校不同。」
+人聳聳肩，接著把眼前的麵食吃完。
+
+「沒想到，大家都一樣啊。」異色的眼瞳裡搖曳著點點的光，卻很快就暗淡下來。
+
+理想總是豐滿的，但真實融入進群體後，就只剩疲憊了。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1129039490187538543 class=chatlog__message-container data-message-id=1129039490187538543><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1129039490187538543>07/13/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「只有哥哥是特別的。」
+風花從碗中抬起頭，想起什麼開始笑起來。
+
+「只有哥哥能回答我外星人的問題，還有我體溫的準確數字。」
+當時問出古怪問題不過是想哥哥輕鬆一點，他卻每次都會認真接住我的問題，把我的怪異都看成平常。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1129045215085334669 class=chatlog__message-container data-message-id=1129045215085334669><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1129045215085334669>07/13/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>聞言雪月歪了歪頭，然後伸手輕輕撩起妳前髮，再撫上妳的額頭。「29℃ 吧。」任誰都清楚完全不是那樣，但他仍然認真的回應道。
+
+其實換誰都會給對方一個回應吧。
+雪月笑笑的想。
+
+只是，惟獨自己的是正解。
+
+「那，我的呢？」凝望著妳的雙眼眨了眨，跟著笑得揚起的唇角微微彎起。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1129048542808375316 class=chatlog__message-container data-message-id=1129048542808375316><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1129048542808375316>07/13/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>風花很喜歡這個熟悉的數字，是兩人的暗號，是唯一的答案。
+她伸手捧著哥哥的臉，露出與他相似的笑容。
+
+「也是29℃呢。」
+其實是比普通男性低一點的36℃，不過這樣就好。
+
+溶化後就都結合成一體，甜蜜美味，就算膩得很也是深刻的。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1129056003686678629 class=chatlog__message-container data-message-id=1129056003686678629><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1129056003686678629>07/13/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「果然是相同的呢。」這樣就安心了。
+頰肉從妳指縫間漏出了點，即便如此兩雙眼仍然映著對方的臉。
+
+牛奶色的髮絲，白巧克力般的肌膚；
+相似的笑容，相同的體溫。
+
+你們既獨一無二，同時又相連。
+
+從他人那邊可以取得各色各樣的答案，可都不是正確的。
+「我的問題也只有妳能解答了。」對啊，比起學校的話題，還是這樣的交流有意義多了。
+
+說著，雪月握上妳的手，閉上雙眼在手心裡輕輕磨蹭。
+手心緊貼手背，交融在一起的溫度是如此的完美。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1129059560125120553 class=chatlog__message-container data-message-id=1129059560125120553><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1129059560125120553>07/13/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>只要跟哥哥在一起，少時所想要的都會得到歸宿。
+姆指撫蹭他的臉頰，帶上一抹與自己耳尖相同的淡紅暖意。
+
+因為世上只有我們是相同的。
+
+「對啊，哥哥。」
+看著哥哥溫順漂亮、全心信賴的樣子，風花按捺不住內心愈發激烈的心跳，湊上前以鼻尖碰碰他的，又貼著他的臉頰。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1129072902659125368 class=chatlog__message-container data-message-id=1129072902659125368><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1129072902659125368>07/13/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>頂上晃動的暖色燈光為房間加添了溫度，本應與妳相同的體溫悄然的攀升，似是傳染般，本應在妳耳尖的紅也落在他的臉頰。
+
+心跳聲中，那與親情相異的悸動過份刺耳，少年的眼瞳裡泛起了迷茫。
+如何區分對妹妹的感情，於鈴 雪月來說，是個永遠的課題。
+
+也許兩個身份都不放開，你們都會比較輕鬆。
+
+「那，以後妳有工作室的話，我就來當助手了哦，說好了呢。」那紫粉相間的眼瞳中，無不是對妳的愛。他的笑容仍然帶著孩子般的稚氣，可語氣卻是千字萬確、不容拒絕的。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1129328195645214731 class=chatlog__message-container data-message-id=1129328195645214731><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1129328195645214731>07/14/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「我的工作室絕對只有哥哥能進，說好了。」永遠比哥哥再貪心一點的風花認真地許下諾言。
+五彩斑斕的玻璃窗中只映進兩人的身影，無人可以窺視的空間，大概就是最好的世界了。
+
+「到時候，我也要窩在哥哥身邊、幫哥哥的忙。」
+紫藍眼眸泛起希望時就像海邊未被發現的貝殼，上一刻帶著海洋的深邃，下一刻又回復天空的明朗。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1134089191169478687 class=chatlog__message-container data-message-id=1134089191169478687><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1134089191169478687>07/27/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「好啊。」雪月一口答應，「這樣看來工作室要再加個休息區和廚房呢。」想像著未來的景象，他又輕聲的笑了笑。
+
+他貪戀著妳的溫暖，遲遲沒將妳放開，直到好一會後才不捨的問：「要到門外看看嗎？如果出去後還早的話我已經想好要帶妳去哪了。」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1134095289179963443 class=chatlog__message-container data-message-id=1134095289179963443><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1134095289179963443>07/27/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「去哪？」
+風花也沒捨得放開對方，便乾脆笑著牽緊哥哥的手站起，往門口走去。
+
+「嗯——是冰淇淋店嗎？上次我們一起吃檸檬雪葩時還說過下次要吃其他口味呢。」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1134101802212659270 class=chatlog__message-container data-message-id=1134101802212659270><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1134101802212659270>07/27/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「嗯～希望限定的彈珠汽水口味還有呢，之前就想帶妳去試試看的。」藏起來的心思被妳看透時，他亦沒有感覺可惜，所倒是看來心情很好的小幅度的晃著你們雙握的手。
+
+「冰淇淋店再走一段路就會有主題樂園，反方向是海濱走廊。」說著，雪月也跟妳一起來到門邊。他伸出另一手，將門把轉開。「如果樂園休息時間到了就到海濱走走吧，說不定燈飾也換成新的主題了。」
+
+在門被打開時，一個寬敞雅致的歐式房間映入你們眼中。
+
+天花板中央有一戶鑲入彩色玻璃的天窗。在陽光映入時，會透出偏暖的虹光很是漂亮。而在刻有天使浮雕的牆身旁有一排木製書架，裡面根據其顏色和種類整齊的排列著各色各樣的書籍，對喜歡讀書的人而言這裡說不定是天堂吧。
+
+與書架相伴的是帶扶手的大理石旋轉樓梯，這個地方宛如一座大型圖書館。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1134112704072790128 class=chatlog__message-container data-message-id=1134112704072790128><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1134112704072790128>07/27/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「燈飾會是夏祭主題吧，蘋果糖、金魚、水球和煙花。」
+只是把聯想的事物說出來，就能看到未來兩人一起前往祭典的景象，想必到時候緊握的雙手依舊是溫熱的。
+
+就在夏天的下一瞬，景象變成如同人們對西方神殿的幻想般典雅高貴的模樣。
+「好漂亮......」
+風花一下子就被彩色玻璃的天窗吸引，抬首望著光影間的危彩，連雙色眼眸都在陽光下映出破碎的美感。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1134127011732930671 class=chatlog__message-container data-message-id=1134127011732930671><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1134127011732930671>07/27/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「那說不定附近有會祭典呢，妳應該是第一次逛祭典吧，那就得好好準備一下了～」水色、印有紫陽花圖案的浴衣，她穿起來一定很漂亮。
+
+加上柔軟的白色蕾絲點綴，最後，從這邊綁上紺藍色緞帶——雪月低下頭，指尖從妳耳邊撫過，將妳如絹的長髮勾至耳後。
+
+「嗯，真的很漂亮。」他說。
+
+再次抬首，在他踏入房間的瞬間，腳步卻突然停住了。
+「？」人看著自己的雙腳，滿臉疑惑地歪著頭。看來他也沒弄明白自己為何停下步伐。
+
+不過，在他愣了幾秒後還是踏入了房間，只是語氣突然變得不太情願了：「欸——拿完書到樓梯那邊看吧，這裡太曬了，待久了人會溶化。」
+
+跟妳不同，他無心欣賞晶瑩通透的彩繪玻璃，反而像懼光般的將眼瞇成一線並沿靠牆壁，找尋陰影處躲藏。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1134133196565524490 class=chatlog__message-container data-message-id=1134133196565524490><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1134133196565524490>07/27/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「嗯？」
+留意到哥哥一臉厭棄的樣子，風花盯著他在圖書架隨便抽出一本不厚的書，步過陽光去到他陰暗的身旁，毫無保留，沒有任何猶豫。
+
+哥哥會跟自己在露台曬太陽，也會跟自己到街上亂逛，還未看過他對陽光如此敏感呢。
+是太熱了嗎？
+
+風花學著哥哥照顧自己時的方法，突然撩起額前的髮并貼近對方的額，些許濕潤的肌膚很柔軟，即使擔心但距離仍使她想彎起唇。
+「沒事吧哥哥？」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1134143331723640842 class=chatlog__message-container data-message-id=1134143331723640842><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1134143331723640842>07/27/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>妳抱著書來到靠在陰影處雪月身邊。他正好靠坐在牆身發呆，於是妳彎下腰就能觸碰到他。他並不討厭陽光的人，也喜歡跟妳一起在淋浴陽光底下，於是這樣的他很反常。
+
+輕觸，雪月的皮膚仍舊是微冷的 36℃。
+陽光映在妳背上的同時，在他頂上落下一抹影，他的眼神散發著與體溫完全相異的刺人熱度。
+
+「不太好呢，」他伸手，掌心在妳的臂上滑過時似是被蛇攀附帶著一絲陰冷，細長的指尖順著腕骨再往上，最後與妳緊緊相扣：「風花。」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1134147463515750433 class=chatlog__message-container data-message-id=1134147463515750433><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1134147463515750433>07/27/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「 ......雪月哥哥。」
+他的指尖滑上小臂時，有種與之前不同的麻癢從手漫延至背脊，使風花不自覺地顫抖，連嗓音都染上一絲不安。
+她知道哥哥的病發作了。
+
+「風花會幫你的。」
+她用力地閉上眼，把對方炙熱的眼神隔絕在彼此之外，然後緩慢地貼上對方的唇。
+
+明明自己已經習慣主動，可是在這個陌生又熟悉的哥哥眼前，名為「幫助」的真相像要見光了。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1134159165313523753 class=chatlog__message-container data-message-id=1134159165313523753><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1134159165313523753>07/28/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「風花真乖啊。」在妳自動將唇貼上時，他手用力一拉，將妳擁抱入懷。「不要那麼害怕啊，這次我會比較溫柔的，嗯？」
+
+雪月的左手環在妳的抖顫的腰枝。或許是想要真像他說的要溫柔待妳，也或者只是單純的惡趣味，他的手隔著輕薄的布料在妳腰側的皮膚上來回摩挲。
+
+現在的雪月的話，說不定是看得懂妳的「幫助」的——
+
+他不緩不急的用舌尖探入妳的口腔，接著將妳的舌頭卷入，噬咬。
+血的味道再次在口內擴散。嘖嘖的水聲音在大腦、空間中回響，無力感如觸電貫徹妳纖細的身軀。
+而他，對此感到喜悅。
+
+他的舌頭肆意的往深處侵略，幾乎要撞進妳喉嚨深處。
+
+沈溺的話，會被吃掉，會被支配。
+等等的想法填滿了妳的思考。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1134468116521435286 class=chatlog__message-container data-message-id=1134468116521435286><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1134468116521435286>07/28/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>當他的手搭上自己的腰枝時，風花想：她說不出話來了。
+她想逃，往陽光逃，往門外逃，卻弓起腰逃到對方的懷中，被逼抬頭成為食物。
+
+是外星種類口味的冰棒。
+
+被他舔弄、吸吮後融化成液體，無力沉沒在水波中聽著彼此流動的聲音，發出泡沫消亡的細碎呻吟。
+呻吟中的心聲他能聽到嗎。
+
+風花閉著眼放任自己卑鄙地隨波逐流，即便被觸及深處生理引起嘔吐感都忍下來了，甚至不自覺地跨坐到對方腿上接近距離。
+
+會被吃掉、會被支配、會被吞沒、會被發現、
+哥哥、哥哥、哥哥。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1136632891225419876 class=chatlog__message-container data-message-id=1136632891225419876><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1136632891225419876>08/03/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>視野忽明忽暗，大腦也酥酥麻麻，似是冒出點點星芒。
+可能是氧氣不足吧，即使妳偶爾找到空檔想要呼吸，雪月也不允許，再次將妳的呼吸奪去。
+
+零碎的心聲能否在人魚完全化成泡沫前被發現呢。
+
+閉起眼前，最後瞥見的是笑了起來的雪月。
+他像收到美味蛋糕的孩童一般，天真爛漫。
+只是，孩童既是純粹卻又貪婪，而他眼裡的妳，是蛋糕上的草莓，正被他疼惜的品嘗、吞嚥。
+
+手從扶在腰間慢慢往下來到臀部，從不會在妳面前展現的勾人笑聲，此刻在妳耳邊響起：「清醒的話就會將風花妳推開吧，我還真不捨得啊，要怎麼辦呢。」似苦惱般說著，他的手卻撩起了妳的裙擺。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1136639958879313990 class=chatlog__message-container data-message-id=1136639958879313990><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1136639958879313990>08/03/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>冰涼指尖擦過裙邊未被探索過的白哲肌膚，像擁有魔法般把喘息不過來的悶熱全都驅去。
+盈滿水氣的雙眸半睜開，緊抓著對方肩膀的手放鬆了一瞬，直至數秒後才回過神。
+
+迷霧漸漸散去，卻只是掉進下一個五彩迷宮。
+人魚曾是愛麗絲，在未知的花園中徘徊前行，想要探索更多，難以言喻的感覺卻阻擾她找尋人類大多都感受過的歡愉，例如冰冷的瓷磚變得燙手後會如何、親吻的盡頭為何令人放不開手、什麼是愛的表達。
+
+鈴風花不知道種種的結果，只是當眼前「哥哥」要接觸連鈴雪月都未曾看過的部分時，她本能地想要活動起合上的雙腿擺脫品嚐者的懷抱。
+「風花、我也不知道......」
+
+少女低垂著瀰漫慌張和羞意的眼睛，用力地推一推開對方的胸膛。
+此時的她已經沒能跟上對方的步伐，細想未知的後果。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1136653586353369150 class=chatlog__message-container data-message-id=1136653586353369150><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1136653586353369150>08/03/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>對方無法知曉的心情變成三味線上彈撥的音色，獨自奏弦。
+
+「啊啊，那還真是可惜呢。」說著，人順著妳的力度往後靠在牆上，「不過我不想被討厭呢～」他坦然的攤攤手。
+
+也許是已經得到他所需要的事物，於是也放棄得乾脆。
+雪月現在理應要回到清醒，可是他的眼神卻告訴妳，妳仍未找到迷宮的盡頭。
+
+如果鈴雪月會正面去思考鈴風花，而不是「妹妹」的心意，你們都不用被困在永無日出的童話世界了吧。
+踏出未知領域需要受傷的勇氣，顯然，始終向妳尋求溫暖的雪月是貪心的膽小鬼。
+
+假如雪月也能像這人一樣乾脆點，大概就會直接抱住不安的妳。
+
+「嘛，那就暫時還給風花吧，」他側頭，笑得燦爛，緊接著像惡作劇般的伸出雙臂將妳擁抱，「誰叫我那麼喜歡你們呢。」
+
+而數秒的沉默後，雪月收緊了臂彎。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1136660039847907438 class=chatlog__message-container data-message-id=1136660039847907438><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1136660039847907438>08/03/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>當懷抱的力度加強，鈴風花便忘掉了那人所說的話。
+重新吸取屬於自己哥哥的、細膩溫柔又特別的氣息，然後呼出清草與海洋的空氣，讓消失在沉默間的它們就似未曾存在過一樣，只有那不能寫上休止符的樂曲久久奏響著。
+
+少女悄悄磨蹭了麻軟過的雙腿，掃去怪異感覺後才伸出手回抱著鈴雪月。
+「哥哥，還好嗎？」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1136673052567023636 class=chatlog__message-container data-message-id=1136673052567023636><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1136673052567023636>08/03/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>雪月搖搖頭，被回抱後陷入了更長久的沉默。
+不過，一直低著頭逃避的話不可能讓事情變好，更無法得知妳的真實心情，他忐忑著，抬頭。
+
+「……我對妳，」驚慌的眼神但又火紅發熱的臉頰，蘊藏他自己也無法理清的情緒，雪月嚥了嚥口水繼續喃喃的道。
+
+「做了很過份的事……」再理性去斟酌用詞，心底的悸動卻會馬上跳出來反駁。
+
+幸好是妳、因此感覺不糟糕，也不想放手。
+這無疑是變態的，也是雪月識得大眾目光後想要擺脫的。
+
+於是。
+
+「如果……我控制不了精神，希望妳可以打醒、推開我。」即使表情上寫滿了對妳的喜歡，他始終會選擇吐出違心的話，皆因妳不會戳破他的謊言。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1136679813575352370 class=chatlog__message-container data-message-id=1136679813575352370><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1136679813575352370>08/03/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>磨擦聲對風花來說并不罕見，有時候來自生氣的你的半長髮絲，有時候來自鬱悶的你的長袖外套，更多是如同此刻般來自逃避中的你。
+
+鈴風花能理解人類的習慣和界線，但不想懂，也不想哥哥懂。
+搖頭也好，點頭也罷，接受也好，拒絕也罷。
+都不要緊，只要能一直在一起就好，總有一天你會明白的。
+
+於是她順著哥哥的說話聲抬頭，聽著他飛快的心跳聲，映出他心虛的表情。
+只是安靜地、專心地等待這番沒有意義的話結束。
+
+不能表達真正意思的話，沒有存在的必要。
+風花這樣想著，手扶上哥哥的臉，紅暈沒褪，但眸中那些戀慕還是在眨眼間掩去了。
+
+「哥哥希望的話，風花明白了。」我還可以等待的。
+不知道現在的自己看上去乖巧嗎？ </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1136692196687495168 class=chatlog__message-container data-message-id=1136692196687495168><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1136692196687495168>08/04/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「……嗯。」
+
+道歉的話能將距離拉得更遠嗎，可哪天回過頭來妳不在原地的話、而是進到另一個不同色彩的圓圈內的話。
+
+會因為寂寞而死掉吧？
+像兔子一樣。
+
+妳乖巧垂下的眼眸被睫毛的陰影遮蓋，連那晶瑩的淺色眸也不見光彩，他馬上能讀懂眼底的落寞。
+
+不應讓那不符年齡的複雜表情出現在妳臉上的。
+想著，更多的無力油然而生。
+
+「那，」雪月猶豫片刻，將環著妳的手鬆開。他站起身後指了指旋轉樓梯之上。「走吧，看來樓梯上也有書櫃，那邊沒有陽光，也能讀書給妳聽。」
+
+愛麗絲追著兔子，兔子追趕時間，直到雙雙跑入死胡同又或是陷進漩渦，賽跑始終持續。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1136696296695136286 class=chatlog__message-container data-message-id=1136696296695136286><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1136696296695136286>08/04/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「好。」
+少女也會說沒有意義的話，她匆忙地收拾自己，重新在陰影處微笑點頭。
+她沒有再牽上哥哥的手，只是在「適當」的一步距離後跟著他上了樓梯。
+
+愛麗絲向著兔子跑去，幸好不知道自己與傷感擦身而過。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1136711562560815194 class=chatlog__message-container data-message-id=1136711562560815194><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1136711562560815194>08/04/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>你們一同走上樓梯。氣氛安靜得壓抑，別說是腳步聲、連呼吸也清晰可聽。
+雪月不喜歡這樣的氛圍，可是他也想不到什麼能自然轉換的話題。
+
+來到一棟書櫃前，他伸手掃過上頭的書脊。也不知道書櫃是會讀心，還是房子的主人會，這列的書像預料到你們會冷戰般在這裡放置了好幾排與人際相關的書籍。
+
+雪月默默抓出了一本，翻開，然後看來認真的模樣在讀。
+「……裝作一副大人模樣很讓妳心煩吧。」
+
+語氣間有他無奈的自嘲，還有不明顯的不自信。
+「但我無法成為好的榜樣，」即使妳沒有要求過他成為模範。
+
+「所以，我在努力。」手裡的書頁快速翻動，他的眼神卻經已飄向了遠方。
+或者，解釋這種無意義的話從不是妳想聽的，要讓妳與他心意相通不會是件易事。
+
+最後，他闔上了書，低頭看妳。
+「不是刻意冷漠待妳的，對不起。」
+
+話畢，雪月捏起脖子上的小兔子，輕輕的用指尖點了點它的頭。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1139045979547521024 class=chatlog__message-container data-message-id=1139045979547521024><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1139045979547521024>08/10/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>走上樓梯後、站到書櫃前，風花仍然與哥哥保持剛好的距離和不屬於「兄妹」的安靜氛圍。
+距離遠了，空間便能填進寂寞和不安。
+
+少女想，她或許不是那麼從容，比起撒嬌般的打鬧，此時她更想任性地冷回應。
+若果不理會哥哥的話，他會向前還是退後呢？結果會是她想要的嗎？為什麼現在會感到焦灼又無措呢？
+
+鈴風花過於早熟并投入思考中，她向來在父母面前都是適當的乖巧、適當的笨拙，唯有在哥哥面前才能露出獨特的跳脫和機靈。
+現在她卻做適當的反應，如同人類社會中約定俗成的規則和千篇一律的想法，她不喜歡這樣。
+
+少女的手指不自覺地絞成一團，回過神來時已經遲一拍地跟著哥哥抽出書，沒有翻開，只是抱著書。
+聽著身旁的翻頁聲，一時無話可說，直至對方打開了那道無形的門。
+
+「......不是的。」
+「風花沒有介意、我覺得哥哥現在很好。」這是真心話，只是在黑白分明的貪念中，還不夠。
+
+半垂的紫藍雙眸泛著水光，小魚游過劃下難以捕捉的不甘和委屈。
+她不喜歡這樣，她不知道如何平衡內心複雜的情緒，她甚至不能命名。
+
+所以風花只是面向書櫃，沒有抬頭也沒有望向哥哥，獨自強忍著會壞事的鼻尖酸意，最後交出含糊的答覆。
+「嗯......」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1141707354337988728 class=chatlog__message-container data-message-id=1141707354337988728><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1141707354337988728>08/17/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>想撫在對方頭上的手凝住。
+
+他人的情緒現在從不會成為影響鈴雪月心情的事物，非要說的話，他是不會主動去共情別人的悲傷。
+
+不過，心卻揪住了。
+在看見風花藏於陰影下的表情時。
+
+帶有稱讚意味的觸碰大概只會將心推得更開。
+
+「我……」
+
+最真實的感情是喜歡，是礙於關係而無法言表的感情，至少身為兄長的自己不應該。
+可表現出來的，全是希望對方能讀懂的做法。
+這不正正就跟父母討人厭的部份相同了嗎？
+
+「對妳，」雪月從背後將手搭在妳的肩上。腦內的言語還沒有整理好，但他不想放開眼前的女孩，「……對風花妳、」
+
+至少， 在只有兩人的地方，不想再讓她的心懸著。
+
+他單膝撐在地面，另一手輕輕的環起了妳的身體。
+想表達的話過於零散，他深吸了一口氣。
+
+「喜歡妳。」
+「所以……不要走。」不要討厭我。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1141716652862488667 class=chatlog__message-container data-message-id=1141716652862488667><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1141716652862488667>08/17/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>啊、原來自己是想聽到這些啊。
+就算彼此的心意可能並不完全相同也好，在此時此刻，已經足夠了。
+
+從下面走到上層，只需要與火箭到達太空相同的20秒。
+於是現在的自己，不再是浮游於陸地的異鄉人，而是落到歸處的女孩，只用懷抱著自己所愛的就可以了。
+
+淚水不再被只屬於人類的「地心吸力」阻礙，無聲地滑過臉頰沾上裙擺。
+
+風花轉身抱著半跪的少年，使勁把腦袋安放在他的肩膀上。
+白色的長髮與手臂緊緊纏繞對方，每處都回應他的表白。
+
+儘管啜泣使她的嗓音變得似水霧般矇矓輕軟，但她仍然靠在哥哥的耳邊一字一句地說著祈求般的話：
+「我想一直在你的身邊。」
+「想一直喜歡你。」
+無論如何，都想。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1141732103357218926 class=chatlog__message-container data-message-id=1141732103357218926><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1141732103357218926>08/17/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>無重繁星飄散於宇宙與星河待被發現。
+每當夜幕降下、月色照耀時，在人們的眼中他們便是璀璨的。
+
+於是，人往往忽略了它一直都在。
+
+愛似繁星，於是身於星海間的你們，回頭時總能發現它會跟隨於身後。
+只要在意；只要回頭；只要同於宇宙裡。
+它始終在那。
+
+「嗯，喜歡妳。」即使是這樣的我也，最喜歡妳了。
+
+除去保護的棱角後，這才是少年的真正面容。
+無防備的、脆弱的、坦承的。
+
+過長的偽裝讓他忘了妳也害怕受傷，也害怕痛。帶有軟弱哭腔的字句讓雪月加緊了手裡的力度，就算清楚會將妳抓痛，他也不願放開。
+
+他將頭貼著妳，輕輕的閉上眼。滿溢的心情開始决堤。
+
+「我……很擔心，如果將喜歡說出口，妳會跑開。」
+在妳的世界中，我會變成可怕的怪物，聽到妳帶有厭惡的指摘。
+
+「而我會再也抓不緊妳了……我害怕那樣。」
+但這個宇宙裡，從來都只有我們啊。
+
+「我不會離開的，會在妳的旁邊。」
+對妳的愛也一直都在。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1141742354714329140 class=chatlog__message-container data-message-id=1141742354714329140><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1141742354714329140>08/17/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「你不可以騙我。」
+要選擇我啊。
+
+「不可以忘記我喜歡你。」
+要記得這份只會獻給你的愛啊。
+
+「不可以把我拋在身後。」
+要回頭看看我啊。
+
+少女感受不到哥哥抱緊自己的疼痛，只知道要把身體縮在對方的胸膛，讓本該一體的兩人再次貼近。
+如同終於在星海重逢的兩顆心。
+
+風花抬起濕漉漉的小臉龐，鼻子蹭到雪月的臉，異色眼眸水光未散，是彼此同樣的情感。
+「雪月哥哥......」
+延長的尾音在密不透風的宇宙間徘徊，包覆著他們。
+
+「我不會傷害你，只會一直一直陪你。」
+「所以、」
+少女湊到他的唇邊留下慧星一剎的光芒，溫暖的、柔軟的。
+然後她滿意地露出笑容。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1141759558428147762 class=chatlog__message-container data-message-id=1141759558428147762><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1141759558428147762>08/17/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>嗯、我無法欺騙妳。
+當然、遇見妳的每天，都是紀念日啊。
+絕對，不會讓妳一個人飄浮在半空。
+
+言語是簡陋的，它從不足夠表達心中的悸動。
+所以啊、
+
+雪月捧起妳小小的左手，唇輕啄在手背。
+「嗯，我承諾風花。」
+
+眼眸低垂，那雙唇順著手的曲線一路吻至無名指，再避開尖銳的貝齒輕輕舔咬。
+纖長的睫毛微微的顫著，像對待易碎品般的小心翼翼的輕吸妳的肌膚。
+
+很快，雪白的無名指上落下粉紅色、與他瞳色相近的印。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1141763523236601876 class=chatlog__message-container data-message-id=1141763523236601876><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1141763523236601876>08/18/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>望著手上的小小印記，風花歡躍地捧起對方的左手。
+
+修長優雅的手指潔白如雪，少女低頭像小動物般輕輕地從指甲往上吻。
+呼吸烘著他的手背，細微的濕潤滑膩感到達左手無名指，接著以牙齒磨蹭吸咬。
+
+直至雪月的無名指出現一樣的印，風花才直起身再次抱著他。
+「約好了！」
+最接近心臟的誓言，一動牽全身，這樣才能負擔起如此沉重的愛。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1141769309744541757 class=chatlog__message-container data-message-id=1141769309744541757><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1141769309744541757>08/18/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>聽說，愛會被人稱為甜蜜的負擔。
+但假若沒有重量，心就不夠踏實了。
+起碼鈴雪月是需要的。
+
+「嗯，約好了。」雪月單手回抱妳，然後將左手舉起。凝著無名指上的吻痕時，唇角的笑意變得更深，殘留在指節上灼熱感似不會消失般，撩撥著他的心。
+
+「我們要走了嗎？」不難看出他對接下行程的期待，不過要離開這裡的話便要鬆開抱緊妳的手，那可不行。
+
+「抓緊我的脖子吧～」於是，雪月輕輕拍了拍妳的雙臂，讓妳改變一下姿勢，讓他可以將妳抱起。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1141924213461110915 class=chatlog__message-container data-message-id=1141924213461110915><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1141924213461110915>08/18/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「好——」
+風花依舊貼在哥哥身上，只是改用雙手環著他的脖子，窩在他的肩膀上。
+「我們走吧，雪月哥哥。」
+
+他們之間再沒有距離，剛才的不安隨之化為泡沫，倒影在少女泛著光的眼眸裡。
+在懷抱的一方天地間，終於可以呼吸了。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144236198794113094 class=chatlog__message-container data-message-id=1144236198794113094><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144236198794113094>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「嗯。」待妳調整好姿勢後雪月就將妳抱起。
+他輕輕側頭，臉頰靠在妳的頭頂似有似無的蹭了蹭。
+
+前路是未知的，不過只要握緊對方的那雙手，恐懼就會在透入的陽光下消散。手心裡的溫度也會給予相應的勇氣，讓步履變得無愄、堅強。 </span> <span class=chatlog__edited-timestamp title="08/24/2023"> </span></div></div></div></div><div id=chatlog__message-container-1144236204120879205 class=chatlog__message-container data-message-id=1144236204120879205><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="08/24/2023"></div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>【偵查】</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144237892751872050 class=chatlog__message-container data-message-id=1144237892751872050><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144237892751872050>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>⚀ +rj 55 ⚅</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144237894488309841 class=chatlog__message-container data-message-id=1144237894488309841><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/attachments/1153255405141626889/1153260600089133097/Three_six-sided_dice.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=DICE#4799 data-user-id=680792660956807301>DICE</span> <span class=chatlog__author-tag>BOT</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144237894488309841>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>判定:
+失敗(79/55)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144238101074550786 class=chatlog__message-container data-message-id=1144238101074550786><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144238101074550786>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>⚀ +rj 鈴雪月偵查 40 ⚅</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144238102630645761 class=chatlog__message-container data-message-id=1144238102630645761><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/attachments/1153255405141626889/1153260600089133097/Three_six-sided_dice.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=DICE#4799 data-user-id=680792660956807301>DICE</span> <span class=chatlog__author-tag>BOT</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144238102630645761>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>判定
+鈴雪月偵查:
+失敗(45/40)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144238856250609779 class=chatlog__message-container data-message-id=1144238856250609779><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/attachments/1153255405141626889/1153261852894175283/gemstones-vs-crystals-differences-1170x658_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(192,192,192) title=lemonicesoda data-user-id=679431188745551872>KP</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144238856250609779>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>圖書館裡似乎沒有什麼特別的了。
+雪月抱著妳走，很快的來到盡頭的一扇門前。門縫裡傳來微涼的風，撫過臉頰時能感覺到絲絲的寒意。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144239479406727208 class=chatlog__message-container data-message-id=1144239479406727208><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144239479406727208>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>風花抱緊了環著哥哥的雙手後，蹭蹭他的肩膀，半側的臉似窺看般望著最親近的人。
+「哥哥，推門吧？」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144242479097467010 class=chatlog__message-container data-message-id=1144242479097467010><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144242479097467010>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「好，妳要抱緊我哦，如果會冷的話我會走快點。」不過夏天的風卻如似冷冽還真是微妙啊。
+「之後再給妳買點暖飲。」
+
+雪月向妳點點頭，然後放開環在妳背上的手去轉動門把。
+
+門打開後，裡頭是與這裡相異，是伸手不見五指的黑。
+不但沒有光，就連你們所在地的光線也照不進裡頭。
+
+接著，雪月伸出腳，嘗試踩了踩門外的地，「地面也粗糙又冰涼的，感覺像石頭的表面。」
+
+從風的流動你們能隱約知道出口的方向。只是，因為絲毫沒有光線照進來，無法猜測出這個地方有多深。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144243535256748144 class=chatlog__message-container data-message-id=1144243535256748144><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144243535256748144>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「嗯、那風花幫哥哥摸著旁邊，不讓你撞到。」
+往旁邊的空間伸出手，然後盡力在黑暗中看出一絲色彩或光線。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144252081977434222 class=chatlog__message-container data-message-id=1144252081977434222><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144252081977434222>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>摸上牆身時，妳能從凹凸不平的觸感裡可以摸出是巖石表面，雖然仍然未看到光，不過你們互相扶持著所以也不至於會跌倒。
+
+「就拜託妳了哦。」雪月放慢了腳步，幾乎是一步一停頓的小心走。
+
+你們對話的聲音在這個黑暗的空間裡回響，從空洞的響聲聽來，天花板感覺並不高，但這裡似乎是個很大的石窟。
+
+或許是因為黑暗讓其他感管變得敏感，妳甚至能清晰聽見自己鼓動著的心跳、呼吸。
+當然，還有鈴雪月的。
+
+你們的呼吸聲逐漸重合，連胸前的起伏也變得一致。
+雪月看來很喜歡與妳相同的悸動，於是，他始終安靜的傾聽與妳混合在一起後，如情歌般的心跳聲。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144255432492339271 class=chatlog__message-container data-message-id=1144255432492339271><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144255432492339271>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>誰都沒有開口破壞只有兩人的世界中最美好的音樂。
+在同樣的節拍下，風花輕觸石面的手都變成精靈般，點一下便跳躍，心情隨之起舞。
+
+即使看不清前方，但風花也希望能一直走下去。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144265043618304141 class=chatlog__message-container data-message-id=1144265043618304141><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144265043618304141>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>你們順著石窟的紋理靜靜的走，隨著深入，空氣也變得陰冷，不過相擁的身體是溫熱的。
+
+也不知是適應了黑暗還是別的原因，雪月的步速慢慢的回歸到平常。
+微微晃動的懷中始終有著能讓妳安心的氣息，同樣的，只有妳的身影才能填滿他內心的所有不足。
+
+哢噠、
+
+似乎是硬物被踢到聲響。
+雪月往硬物的方向低頭看去，又緩緩的蹲下。他仍舊維持著蹲姿認真盯了幾秒後才將東西撿起，接著拿起它在妳眼前晃了晃，道：「好像是一串鑰匙的樣子。」
+
+「雖然不知道有沒有項圈的，但妳先收起來吧？」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144270030746419380 class=chatlog__message-container data-message-id=1144270030746419380><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144270030746419380>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>哥哥蹲下時，風花已經做好準備，想著要鬆開手跳出他的懷抱了，所以當鑰匙的撞擊聲在面前響起，她反而一頓，然後故作沒事地接過鑰匙，又再次伏在他溫熱的懷抱中。
+　
+「嗯！到光處我便為哥哥解開！」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144276924915527792 class=chatlog__message-container data-message-id=1144276924915527792><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144276924915527792>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「好，那走吧～」雪月點點頭後便繼續帶妳走。
+
+石窟仍舊是一片黑，似是了無盡頭。
+不過一會，雪月又像是踢到什麼般停了下來。
+
+「這是什麼啊？」他歪著頭，疑惑的打量起腳旁的東西。「妳要看看嗎？好像是……小小的建築？」
+
+雖說在這種地方放建築多少有些奇怪。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144278406419202078 class=chatlog__message-container data-message-id=1144278406419202078><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144278406419202078>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「建築？風花想看！」
+這次少女沒有亂動，安坐著等哥哥抱著自己去看。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144279935708573756 class=chatlog__message-container data-message-id=1144279935708573756><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144279935708573756>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「就在這裡。」雪月小心的蹲下，然後指了指前方。
+
+順著他的指向看去，妳定睛一看能發現眼前的建築看來也是石製品。
+或許光看並無法完全了解那是什麼，雪月也好奇的伸手摸了摸，在發現沒什麼問題或怪異之處才跟回過頭來妳報告：「看像是小祠堂一樣的神社呢！」
+
+「看不清楚的話可以抓起我的手，我帶妳看看。」 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144281616869498900 class=chatlog__message-container data-message-id=1144281616869498900><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144281616869498900>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>風花輕輕笑著點頭，雙眸像能看透黑暗般與他對望。
+「哥哥幫我。」
+
+明明能看到大概輪廓但還是把手放到哥哥手中，指尖在他的掌中抓了抓。 </span> <span class=chatlog__edited-timestamp title="08/24/2023"> </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144286549501022229 class=chatlog__message-container data-message-id=1144286549501022229><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144286549501022229>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「嗯～」雪月沒多作猶豫，馬上就回握妳。
+
+他先帶妳撫上了石製物的邊緣，冰冷的觸感馬上從粗陋的石面傳遞至指尖。
+造成表面不光滑的成因是風化，看來這個小神社有一定的歷史了。這般古老的東西，如果粗魯的觸碰的話應該馬上就會塌掉吧？
+
+雖說你們的手勢都很輕，但最邊角的地方已經有輕微的破損了，說不定是剛剛被雪月不小心碰落的部份。 </span></div></div></div></div><div id=chatlog__message-container-1144286554760683632 class=chatlog__message-container data-message-id=1144286554760683632><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="08/24/2023"></div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>【靈感】</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144286883560558753 class=chatlog__message-container data-message-id=1144286883560558753><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144286883560558753>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>⚀ +rj 風花靈感 85 ⚅</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144286886404296704 class=chatlog__message-container data-message-id=1144286886404296704><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/attachments/1153255405141626889/1153260600089133097/Three_six-sided_dice.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=DICE#4799 data-user-id=680792660956807301>DICE</span> <span class=chatlog__author-tag>BOT</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144286886404296704>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>判定
+風花靈感:
+困難成功(28/85)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144288194402193418 class=chatlog__message-container data-message-id=1144288194402193418><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/attachments/1153255405141626889/1153261852894175283/gemstones-vs-crystals-differences-1170x658_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(192,192,192) title=lemonicesoda data-user-id=679431188745551872>KP</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144288194402193418>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>妳總覺得，這座祠堂的構造很熟悉。
+記憶中，有誰在這裡與神定下了契約，可那抹身影始終模糊。
+
+「<em>如果你能實現我的願望，我就會讓祢吃掉。</em>」
+陌生的聲音在妳的耳邊掠過，帶著令人後背一涼的寒意。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144291132147245147 class=chatlog__message-container data-message-id=1144291132147245147><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144291132147245147>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「咦、」
+在寒意襲來的一瞬，本能使風花低頭縮在哥哥的胸膛，手也被收回到身前。
+「是、是誰？」因驚慌而漸高的聲量打破了之前的平和，連心拍數都再次脫軌。 </span> <span class=chatlog__edited-timestamp title="08/24/2023"> </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144297533561131118 class=chatlog__message-container data-message-id=1144297533561131118><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144297533561131118>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「怎麼了？」雪月抱緊受驚的妳後，緊張的撫起妳的後背。
+他瞇起眼環視四周，可周圍看來沒有其他東西，至少你們並沒有發現到有。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144298644053446706 class=chatlog__message-container data-message-id=1144298644053446706><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144298644053446706>08/24/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「風花聽見了、有人在說『如果你能實現我的願望，我就會讓祢吃掉。』」
+哥哥的聲音蓋過了陌生聲音帶來的冰冷，雙手緊抓著哥哥的衣服。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144300126341439679 class=chatlog__message-container data-message-id=1144300126341439679><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144300126341439679>08/25/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>……會跟自己奇怪的變化有關聯嗎。
+雪月垂下眼眸想著。
+
+「沒事的，現在就帶妳回家。」
+
+但他感覺到妳變亂的呼吸聲後，馬上拋去腦中多餘的雜念，再次把妳緊抱於懷中向前方小步的跑。
+
+「來，像玩捉迷藏一樣。閉上眼，倒數到十，就會看見我。」
+
+這個地方說不定會傷害到風花。
+因此，焦躁的腳步也愈漸的急促。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144302696241827890 class=chatlog__message-container data-message-id=1144302696241827890><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144302696241827890>08/25/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>「唔、哥哥。」風花順從哥哥的話，閉上眼後在內心默數。
+身體盡力控制著放輕鬆，至少想哥哥不要過於緊張。
+
+十、九、八、七、六、五...... </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144308464278057020 class=chatlog__message-container data-message-id=1144308464278057020><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144308464278057020>08/25/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><em>四、</em>
+　　鐵鍊在地面刮動的聲音很刺耳，不過雪月變急的呼吸、高鳴的心跳仿佛能把它們全數蓋過。
+
+<em>三、</em>
+　　似乎有暖意開始灑落在妳的肌膚上。
+
+<em>二、</em>
+　　「我來找妳了哦。」帶笑的聲音很是動聽。
+
+<em>一、</em>
+　　微弱的光落在妳的眼皮上，黑暗也轉變為淺淺的橘紅，現在張開眼就能看到聲音的主人了吧？
+
+
+「呼、哧……」
+直到身後傳鍊條拉到盡頭的聲音，雪月才停下腳步大口大口的喘著。
+
+「可以張開眼了哦。」妳的臉頰上除了光的溫暖外，還有什麼柔軟、暖和的觸感輕輕落下。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144310553192439838 class=chatlog__message-container data-message-id=1144310553192439838><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144310553192439838>08/25/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>每一秒的過去就像哥哥正向自己敞開的真心。
+黑暗終將褪去，光明即將到來。
+
+而此刻的鈴風花已經迫不及待。
+就在最後的一秒，她張開了眼眸，哥哥的臉頰泛著運動過的紅暈，與自己異色的眸裡是陽光和笑意，美好得像午後的泡泡汽水，又或是早上的吐司。
+
+「我很想你，哥哥。」
+看到了，就再也不願失去。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144322891073212476 class=chatlog__message-container data-message-id=1144322891073212476><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259793465753671/YUKILOG_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(250,222,230) title=lemonicesoda data-user-id=679431188745551872>鈴 雪月</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144322891073212476>08/25/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>妳每次張開眼，就能在妳的眸裡找到清澄藍天與白雲。
+
+「嗯，我也很想妳，風花。」
+妳是從他的懷裡醒來的公主，連呼吸都值得憐愛。於是，在喊妳的名字時，連耳根也染上了赤紅。
+
+聽說粉紫色的晚霞很美，但我還是會先聯想到溶入汽水裡的果凍、莓果味道的果醬。是妳的笑容，讓我迷戀上它們的酸甜的滋味，也喜歡起在藍天底下一切都變得通透無瑕的原樣。
+
+說出來的話，會嚇到妳嗎。
+
+「一起回去吧。」
+去，只有我們的家。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1144327097481957386 class=chatlog__message-container data-message-id=1144327097481957386><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://media.discordapp.net/attachments/1153255405141626889/1153259119004880906/SIS_-_.png" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(151,197,235) title=atlantiswhale data-user-id=249260322567749632>鈴 風花</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1144327097481957386>08/25/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>哥哥是我的唯一。
+若果髮絲不再雪白，眼眸不再同色，那麼他就是我的另一半，終生只為找尋他。
+而現在，我只需要擁抱他。
+
+少女紅著臉，明明只是對望但卻害羞得如表白的一刻。
+也不知道自己有沒有暴露出來。
+
+「嗯、回去吧。」
+回，只有我們的家。 </span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1146560316709290124 class=chatlog__message-container data-message-id=1146560316709290124><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src="https://cdn.discordapp.com/attachments/1153255405141626889/1153261852894175283/gemstones-vs-crystals-differences-1170x658_-_.jpg" alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(192,192,192) title=lemonicesoda data-user-id=679431188745551872>KP</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-1146560316709290124>08/31/2023</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>就這樣回家吧——
+
+再次相擁時，背後傳來什麼東西掉落的聲音。
+可當你們回頭看時，只見一縷黑色的煙霧從後方飄散，黑霧的正體是什麼呢，看來你們都無可得知了。
+
+而，隨著煙霧消失和鎖鏈的墜落，雪月脖上的項圈也開始變透明、消失，化成一圈淡藍印在了他的脖頸。
+
+接著，小兔子輕輕的掉落於裙擺，無害的等待你們將它一同帶離。
+你們肯定都會選擇將它收藏起來的吧？
+
+因為，雪月經已默不作聲的將它收起——
+
+脖子的重量和枷鎖不再時，雪月隨即抱著妳走出石洞。
+這個地方似乎位於你們所住的城市附近。透過樹木的間隙，可以俯瞰山下的城市，而很快的，你們就能找到接下來的目的地。
+
+當然了，在附近樹木的根部，還發現了被放置在那的行李。
+打開檢查後能發現全是你們的。
+
+此時，太陽正好升到正上方，看來已經到了中午時分。
+山路顛簸，於是你們改為緊緊地牽著對方的手，從山上下去。無論是哪一方，步伐都會不約而同的引領對方到那只能夠容納兩人的小小宇宙。
+ </span></div></div></div></div>
+
+</code></span></div></div></div></div></div>
+</div>
+<div class=postamble><div class=postamble__entry> - END 【枷互】</div></div>
